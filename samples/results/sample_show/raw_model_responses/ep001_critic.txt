@@ -1,1 +1,0 @@
-{"scores":[{"id":"P1","hook":8,"cliffhanger":7,"standalone":5,"confusing":"the importance of the bracelet and the brass key aren't explained","comment":"Visually striking start and a tantalizing key reveal, but the stakes and backstory remain vague for newcomers."}]}

@@ -3,9 +3,6 @@ data/
 *.zip
 *.txt
 !requirements.txt
-# ...except the ORIGINAL sample show written for the public demo (not Kuku's content)
-!samples/
-!samples/**
 
 # ---- Hand-picked promos describe the confidential show's plot: keep local ----
 gold/

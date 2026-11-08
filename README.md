@@ -95,13 +95,11 @@ python -m streamlit run app.py
 ```
 
 Sources in the sidebar:
-- **Sample show**: an original 3-episode script written for this demo (`samples/`). It is not Kuku content, so it is safe to publish.
 - **Kuku show (password)**: the real show, stored encrypted (see below).
 - **My runs**: everything in your local `outputs/` folder (only on your computer).
-- **Upload results**: upload a zipped `outputs/<run>` folder, plus optionally the screenplays zip to read each clip.
 - **Run on new screenplays**: upload a screenplays zip, choose a provider and model, paste your own key, and run the real tool on a few episodes.
 
-**Confidential data never goes online.** `data/` (screenplays) and `outputs/` (results that quote the dialogue) are git-ignored, so the hosted app only contains code and the original sample. Reviewers who have the show load it themselves through the upload options.
+**Confidential data never goes online.** `data/` (screenplays) and `outputs/` (results that quote the dialogue) are git-ignored, so the hosted app only contains code, the text-free public copy and the encrypted file.
 
 ## Showing results on the confidential show, safely
 

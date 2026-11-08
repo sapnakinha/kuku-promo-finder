@@ -28,7 +28,6 @@ import config
 from parse_script import fmt_time, load_show
 
 OUTPUTS = Path("outputs")          # your own runs (git-ignored, only on your computer)
-SAMPLES = Path("samples")          # an original sample show, safe to publish
 PRIVATE = Path("private")          # encrypted (.locked) shows - need a password to open
 PUBLIC = Path("public")            # text-free copies of real runs (export_public.py)
 PUBLIC_SRC = "Kuku show: results"
@@ -431,11 +430,9 @@ with st.sidebar:
     locked_files = sorted(PRIVATE.glob("*.locked")) if PRIVATE.exists() else []
     if locked_files:
         sources.append(LOCKED_SRC)
-    if find_runs(SAMPLES):
-        sources.append("Sample show")
     if find_runs(OUTPUTS):
         sources.append("My runs")
-    sources += ["Upload results", "Run on new screenplays"]
+    sources.append("Run on new screenplays")
     # One-click review link: ...streamlit.app/?key=<password> unlocks the full show
     link_key = st.query_params.get("key")
     if link_key and locked_files and "link_tried" not in st.session_state:
@@ -445,11 +442,12 @@ with st.sidebar:
     pick = st.session_state.get("source_pick")
     source = st.radio("Source", sources, label_visibility="collapsed",
                       index=sources.index(pick) if pick in sources else 0,
-                      help="Sample show: an original demo script. Upload results: a zipped run folder.")
+                      help="Kuku show: results = text-free view of the real run. "
+                           "Run on new screenplays = try the tool on a new show.")
 
     folder, script_folders = None, []
-    if source in (PUBLIC_SRC, "Sample show", "My runs"):
-        runs = find_runs({PUBLIC_SRC: PUBLIC, "Sample show": SAMPLES}.get(source, OUTPUTS))
+    if source in (PUBLIC_SRC, "My runs"):
+        runs = find_runs(PUBLIC if source == PUBLIC_SRC else OUTPUTS)
         folder = st.selectbox("Run", runs, format_func=lambda r: r.name)
         if "mock" in folder.name:
             st.warning("This is a mock run with fake picks, used only to test the code.")
@@ -472,19 +470,6 @@ with st.sidebar:
                 folder = st.selectbox("Run", found, format_func=lambda r: r.name)
             if (Path(opened) / "screenplays").exists():
                 script_folders.append(Path(opened) / "screenplays")
-    elif source == "Upload results":
-        up = st.file_uploader("Zipped run folder", type="zip",
-                              help="Zip an outputs/<run> folder and upload it here.")
-        scripts_up = st.file_uploader("Screenplays (.zip, optional)", type="zip",
-                                      help="Only needed for the 'Read the clip' text.")
-        if up is not None:
-            found = find_runs(safe_extract(up, session_dir() / "upload" / up.name))
-            if found:
-                folder = st.selectbox("Run", found, format_func=lambda r: r.name)
-            else:
-                st.error("No run found in that zip (it needs candidates_all.json).")
-        if scripts_up is not None:
-            script_folders.append(safe_extract(scripts_up, session_dir() / "scripts" / scripts_up.name))
     elif st.session_state.get("online_result"):
         folder = Path(st.session_state.online_result)
         if st.button("Start a new run"):
@@ -501,9 +486,6 @@ if folder is None and source == LOCKED_SRC:
                 'in the sidebar to open it.</div>', unsafe_allow_html=True)
     st.stop()
 if folder is None:
-    st.markdown('<div class="eyebrow">Promo finder</div><div class="show-title">Upload a run</div>'
-                '<div class="meta">Zip an <code>outputs/&lt;run&gt;</code> folder and upload it in the sidebar. '
-                'It is opened in a private temporary folder that other visitors cannot see.</div>', unsafe_allow_html=True)
     st.stop()
 
 run = folder.name
@@ -514,8 +496,6 @@ candidates = list(script_folders)
 if input_path:
     # runs made on Windows store paths with backslashes; the server is Linux
     candidates.append(Path(input_path.replace("\\", "/")))
-if source == "Sample show":
-    candidates.append(SAMPLES / "screenplays")
 if summary.get("show"):
     candidates.append(DATA / summary["show"])
 script = load_script(tuple(str(f) for f in candidates))

@@ -13,7 +13,7 @@ We turn every block into a dictionary ("line"):
      "emotion": "Shaking, Firm", "start": 13.5, "end": 14.3,
      "text": '"Search me if you want."', "scene": 1}
 
-(The examples come from the original sample show in samples/, not from client data.)
+(Invented example lines, not client data.)
 
 No AI is used here: the format is regular, so plain Python is faster,
 free and never makes mistakes about timestamps.

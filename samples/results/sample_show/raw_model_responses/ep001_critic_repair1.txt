@@ -1,1 +1,0 @@
-{"scores":[{"id":"P1","hook":6,"cliffhanger":5,"standalone":5,"confusing":"Why does a cleaner have a sparkling bracelet?","comment":"Solid tension but lacks a clear hook and payoff."},{"id":"P2","hook":4,"cliffhanger":8,"standalone":6,"confusing":"Who is the grandfather and why does his key matter?","comment":"Better mystery ending, but opening is weak."}]}
