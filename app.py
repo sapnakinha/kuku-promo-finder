@@ -36,60 +36,114 @@ st.set_page_config(page_title="Promo Finder", layout="wide")
 
 st.markdown("""
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap');
   #MainMenu, footer, header [data-testid="stToolbar"], .stDeployButton {visibility: hidden;}
-  .block-container {padding-top: 4.5rem; max-width: 1080px;}
   header[data-testid="stHeader"] {background: transparent;}
+  .block-container {padding-top: 4.5rem; max-width: 1080px;}
   [data-testid="stSidebar"] {background: #EFEDE8; border-right: 1px solid #E2DFD8;}
 
   .eyebrow {font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase;
             color: #3E6A7A; font-weight: 600; margin-bottom: 4px;}
-  .show-title {font-size: 2.05rem; font-weight: 650; color: #1E2A36; line-height: 1.15;
-               letter-spacing: -0.4px; margin: 0;}
+  .show-title {font-family: 'Source Serif 4', Georgia, serif; font-size: 2.45rem; font-weight: 600;
+               color: #1E2A36; line-height: 1.12; letter-spacing: -0.3px; margin: 0;}
+
+  .timeline {margin: 4px 0 10px 0;}
+  .tl-row {display: flex; align-items: center; gap: 10px; margin-top: 4px;}
+  .tl-ep {font-size: 0.72rem; color: #8A929A; width: 34px; flex: none;}
+  .tl-bar {position: relative; flex: 1; height: 6px; background: #EFEDE8; border-radius: 3px;}
+  .tl-seg {position: absolute; top: 0; height: 6px; border-radius: 3px; background: #6E8F9B;}
+  .tl-end {font-size: 0.72rem; color: #8A929A; width: 40px; text-align: right; flex: none;}
+
+  .spot-head {font-size: 0.72rem; letter-spacing: 1.6px; text-transform: uppercase; color: #8A929A;
+              margin: 4px 0 10px 0;}
+  .spot {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 30px;}
+  .spot-card {background: #FFFFFF; border: 1px solid #E6E3DC; border-radius: 10px; padding: 16px 18px;
+              transition: box-shadow .18s ease, transform .18s ease;}
+  .spot-card:hover {box-shadow: 0 6px 18px rgba(30,42,54,0.08); transform: translateY(-1px);}
+
+  .spot-rank {font-family: 'Source Serif 4', Georgia, serif; font-size: 2rem; font-weight: 500;
+              color: #3E6A7A; line-height: 1;}
+  .spot-hook {font-family: 'Source Serif 4', Georgia, serif; font-size: 1.05rem; color: #1E2A36;
+              line-height: 1.35; margin: 10px 0 12px 0;}
+  .spot-meta {font-size: 0.78rem; color: #6E7781;}
+
+  .site-footer {margin-top: 48px; padding-top: 16px; border-top: 1px solid #E2DFD8;
+                display: flex; justify-content: space-between; font-size: 0.8rem; color: #8A929A;}
+  .site-footer a {color: #3E6A7A; text-decoration: none;}
   .meta {color: #6E7781; font-size: 0.88rem; margin: 6px 0 22px 0;
          padding-bottom: 18px; border-bottom: 1px solid #E2DFD8;}
 
-  .stats {display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 26px;}
-  .stat {background: #FFFFFF; border: 1px solid #E6E3DC; border-radius: 10px; padding: 14px 16px;
-         border-top: 3px solid #3E6A7A;}
-  .stat.warn {border-top-color: #B07A6E;}
-  .stat.ok {border-top-color: #6B8F71;}
-  .stat .n {font-size: 1.7rem; font-weight: 650; color: #1E2A36; line-height: 1.1;}
-  .stat .l {font-size: 0.78rem; color: #6E7781; margin-top: 2px;}
+  .stats {display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 32px;}
+  .stat {background: #FFFFFF; border: 1px solid #E6E3DC; border-radius: 10px; padding: 16px 18px;
+         min-width: 0;}
+  .stat .n {font-size: 1.7rem; font-weight: 600; color: #1E2A36; line-height: 1.15;}
+  .stat .l {font-size: 0.8rem; color: #6E7781; margin-top: 4px;}
 
   .stTabs [data-baseweb="tab-list"] {gap: 22px; border-bottom: 1px solid #E2DFD8;}
   .stTabs [data-baseweb="tab"] {padding: 8px 2px; color: #6E7781;}
   .stTabs [aria-selected="true"] {color: #1E2A36 !important; font-weight: 600;}
   .stTabs [data-baseweb="tab-highlight"] {background-color: #3E6A7A;}
 
-  div[class*="st-key-card"] {background: #FFFFFF; border: 1px solid #E6E3DC;
-        border-left: 4px solid var(--accent, #3E6A7A); border-radius: 10px;
-        padding: 16px 20px 10px 20px; margin-bottom: 14px;
+  div[class*="st-key-card"] {background: #FFFFFF; border: 1px solid #E6E3DC; border-radius: 10px;
+        padding: 18px 22px 16px 22px; margin-bottom: 16px; gap: 0.6rem;
         transition: box-shadow .18s ease, transform .18s ease;}
   div[class*="st-key-card"]:hover {box-shadow: 0 6px 18px rgba(30,42,54,0.08); transform: translateY(-1px);}
   div[class*="st-key-card"].rejected {opacity: .75;}
 
-  .row {display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;}
+  .row {display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; row-gap: 6px;}
   .tag {display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 0.74rem;
         background: #F1EFEA; color: #4A5560; border: 1px solid #E6E3DC;}
   .tag.rank {background: #1E2A36; color: #fff; border-color: #1E2A36; font-weight: 600;}
   .tag.rej {background: #F6ECE9; color: #8A4F43; border-color: #EBD7D1;}
   .tag.dup {background: #F3F3F3; color: #888;}
-  .times {font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.86rem; color: #3E6A7A;
-          margin-left: auto;}
-  .hc {display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 6px 0 8px 0;}
+  .times {font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.84rem; color: #4A5560;
+          margin-left: auto; white-space: nowrap;}
+  .hc {display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; margin: 8px 0 10px 0;}
   .label {color: #8A929A; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.2px;
           margin-bottom: 2px;}
   .val {color: #1E2A36; font-size: 0.97rem; line-height: 1.4;}
   .why {color: #4A5560; font-size: 0.88rem; margin: 4px 0 8px 0;}
-  .scores {display: flex; gap: 16px; font-size: 0.8rem; color: #6E7781;
-           border-top: 1px dashed #E6E3DC; padding-top: 8px;}
+  .scores {display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.8rem; color: #6E7781;
+           border-top: 1px solid #EFEDE8; padding-top: 10px; margin-top: 4px;}
   .scores b {color: #1E2A36;}
+  .scores .total {margin-left: auto;}
+  div[class*="st-key-card"] [data-testid="stExpander"] {margin-top: 6px;}
+  div[class*="st-key-card"] [data-testid="stMarkdownContainer"] {margin-bottom: 4px;}
+
+  .plan {width: 100%; border-collapse: collapse; table-layout: fixed; background: #FFFFFF;
+         border: 1px solid #E6E3DC; border-radius: 10px; overflow: hidden; font-size: 0.88rem;}
+  .plan th {text-align: left; font-weight: 500; color: #8A929A; font-size: 0.74rem; letter-spacing: 0.6px;
+            text-transform: uppercase; padding: 10px 14px; border-bottom: 1px solid #EFEDE8;}
+  .plan td {padding: 10px 14px; vertical-align: top; color: #1E2A36; border-top: 1px solid #F3F1EC;
+            overflow-wrap: anywhere;}
+  .plan .c-rank {width: 64px; color: #6E7781;}
+  .plan th.c-clip {font-family: inherit; font-size: 0.74rem; color: #8A929A;}
+  .plan .c-clip {width: 210px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.8rem;
+                 color: #4A5560;}
   .note {font-size: 0.82rem; color: #8A4F43; margin-top: 4px;}
   .section-note {color: #6E7781; font-size: 0.9rem; margin: 2px 0 14px 0;}
-  .day {font-weight: 600; color: #1E2A36; margin: 18px 0 6px 0; padding-left: 10px;
-        border-left: 3px solid var(--accent, #3E6A7A);}
+  .day {font-weight: 600; color: #1E2A36; margin: 22px 0 8px 0;}
+  .day span {font-weight: 400; color: #6E7781;}
   .line {font-size: 0.88rem; margin: 2px 0;}
   .line .t {font-family: ui-monospace, Menlo, Consolas, monospace; color: #8A929A; margin-right: 8px;}
+  .spot-meta {margin-top: auto;}
+  .spot-card {display: flex; flex-direction: column; min-width: 0;}
+  .val, .spot-hook, .why {overflow-wrap: anywhere;}
+
+  @media (max-width: 900px) {
+    .stats {grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .spot {grid-template-columns: minmax(0, 1fr);}
+    .show-title {font-size: 2rem;}
+  }
+  @media (max-width: 640px) {
+    .scores .total {margin-left: 0;}
+    .plan .c-clip {width: 120px;}
+    .plan .c-rank {width: 44px;}
+    .block-container {padding-left: 1rem; padding-right: 1rem;}
+    .hc {grid-template-columns: minmax(0, 1fr); gap: 10px;}
+    .times {margin-left: 0; white-space: normal;}
+    .site-footer {flex-direction: column; gap: 6px;}
+  }
 </style>
 """, unsafe_allow_html=True)
 
@@ -178,6 +232,22 @@ def clean(text):
 
 
 # ---------------------------------------------------------------- display
+def timeline_html(p, accent):
+    """One thin bar per episode the promo uses; shaded parts = the clip."""
+    rows = []
+    for ep in sorted({seg["episode"] for seg in p.get("segments", [])}):
+        length = EP_DURATION.get(ep)
+        if not length:
+            return ""
+        segs = "".join(
+            f'<div class="tl-seg" style="left:{100 * seg["start"] / length:.1f}%;'
+            f'width:{max(1.5, 100 * (seg["end"] - seg["start"]) / length):.1f}%"></div>'
+            for seg in p["segments"] if seg["episode"] == ep)
+        rows.append(f'<div class="tl-row"><span class="tl-ep">Ep {ep}</span><div class="tl-bar">{segs}</div>'
+                    f'<span class="tl-end">{fmt_time(length)[:5]}</span></div>')
+    return f'<div class="timeline">{"".join(rows)}</div>' if rows else ""
+
+
 def promo_card(p, script, key):
     accent = ANGLE_COLORS.get(p.get("angle", "other"), NEUTRAL)
     if p["status"] != "valid":
@@ -190,7 +260,7 @@ def promo_card(p, script, key):
     elif p["status"] == "duplicate":
         tags.append('<span class="tag dup">duplicate</span>')
     if p.get("angle") and p["angle"] != "other":
-        tags.append(f'<span class="tag" style="color:{accent};border-color:{accent}55">{p["angle"]}</span>')
+        tags.append(f'<span class="tag">{p["angle"]}</span>')
     if p.get("duration"):
         tags.append(f'<span class="tag">{p["duration"]:.0f} s</span>')
     if len({s["episode"] for s in p.get("segments", [])}) > 1:
@@ -201,6 +271,7 @@ def promo_card(p, script, key):
     times = f'<span class="times">{segments_text(p)}</span>' if p.get("segments") else ""
 
     html = f'<div class="row">{" ".join(tags)}{times}</div>'
+    html += timeline_html(p, accent)
     html += (f'<div class="hc"><div><div class="label">Hook</div><div class="val">{clean(p.get("hook")) or "—"}</div></div>'
              f'<div><div class="label">Cliffhanger</div><div class="val">{clean(p.get("cliffhanger")) or "—"}</div></div></div>')
     if p.get("why"):
@@ -211,11 +282,11 @@ def promo_card(p, script, key):
         html += (f'<div class="scores"><span>Hook <b>{p["score_hook"]:.0f}</b>/10</span>'
                  f'<span>Cliffhanger <b>{p["score_cliffhanger"]:.0f}</b>/10</span>'
                  f'<span>Makes sense alone <b>{p["score_standalone"]:.0f}</b>/10</span>'
-                 + (f'<span style="margin-left:auto">Score <b>{p["final_score"]}</b></span>' if p.get("final_score") else "")
+                 + (f'<span class="total">Score <b>{p["final_score"]}</b></span>' if p.get("final_score") else "")
                  + '</div>')
 
     with st.container(key=f"card_{key}"):
-        st.markdown(f'<style>.st-key-card_{key} {{--accent: {accent};}}</style>' + html,
+        st.markdown(html,
                     unsafe_allow_html=True)
         if script and p.get("segments"):
             with st.expander("Read the clip"):
@@ -421,6 +492,10 @@ ANGLE_COLORS = angle_colors(angle_list)
 
 kept = sorted([p for p in promos if p.get("rank")], key=lambda p: p["rank"])
 episodes = sorted({p["episode"] for p in promos})
+# Episode lengths for the clip timelines: from the screenplays if available,
+# otherwise from the run summary (newer runs record them)
+EP_DURATION = {int(k): v for k, v in summary.get("episode_durations", {}).items()}
+EP_DURATION.update({ep: max(l["end"] for l in lines) for ep, lines in script.items() if lines})
 n_rej = sum(p["status"] == "rejected" for p in promos)
 st.markdown(
     f'<div class="eyebrow">Promo finder</div>'
@@ -431,9 +506,21 @@ st.markdown(
     f'<div class="stats">'
     f'<div class="stat"><div class="n">{summary.get("episodes", len(episodes))}</div><div class="l">Episodes read</div></div>'
     f'<div class="stat"><div class="n">{len(promos)}</div><div class="l">Ideas from the model</div></div>'
-    f'<div class="stat warn"><div class="n">{n_rej}</div><div class="l">Rejected by rule checks</div></div>'
-    f'<div class="stat ok"><div class="n">{len(kept)}</div><div class="l">Final promos</div></div>'
+    f'<div class="stat"><div class="n">{n_rej}</div><div class="l">Rejected by rule checks</div></div>'
+    f'<div class="stat"><div class="n">{len(kept)}</div><div class="l">Final promos</div></div>'
     f'</div>', unsafe_allow_html=True)
+
+if kept:
+    cards = []
+    for p in kept[:3]:
+        first = " first" if p["rank"] == 1 else ""
+        eps = "+".join(str(e) for e in sorted({s_["episode"] for s_ in p["segments"]}))
+        cards.append(f'<div class="spot-card{first}"><div class="spot-rank">{p["rank"]}</div>'
+                     f'<div class="spot-hook">{clean(p.get("hook"))}</div>'
+                     f'<div class="spot-meta">Ep {eps} · {p["duration"]:.0f} s · {p.get("angle", "")}'
+                     f' · score {p["final_score"]}</div></div>')
+    st.markdown('<div class="spot-head">Post these first</div><div class="spot">' + "".join(cards) + '</div>',
+                unsafe_allow_html=True)
 
 tab_ep, tab_rank, tab_plan, tab_quality = st.tabs(
     ["By episode", "Ranking", "Posting plan", "Rejected"])
@@ -483,10 +570,15 @@ with tab_plan:
             by_day.setdefault(row["day"], []).append(row)
         for day, rows in by_day.items():
             color = ANGLE_COLORS.get(rows[0]["angle"], NEUTRAL)
-            st.markdown(f'<div class="day" style="--accent:{color}">Day {day} · {rows[0]["angle"]}</div>', unsafe_allow_html=True)
-            st.table([{"Rank": f"#{r['overall_rank']}", "Clip": r["segments"],
-                       "Hook": clean(r["hook"]), "Cliffhanger": clean(r["cliffhanger"])}
-                      for r in rows])
+            st.markdown(f'<div class="day">Day {day} <span>· {rows[0]["angle"]}</span></div>', unsafe_allow_html=True)
+            body = "".join(
+                f'<tr><td class="c-rank">#{r["overall_rank"]}</td>'
+                f'<td class="c-clip">{r["segments"].replace(" + ", "<br>")}</td>'
+                f'<td>{clean(r["hook"])}</td><td>{clean(r["cliffhanger"])}</td></tr>' for r in rows)
+            st.markdown('<table class="plan"><colgroup><col class="c-rank"><col class="c-clip"><col><col>'
+                        '</colgroup><thead><tr><th class="c-rank">Rank</th><th class="c-clip">Clip</th>'
+                        f'<th>Hook</th><th>Cliffhanger</th></tr></thead><tbody>{body}</tbody></table>',
+                        unsafe_allow_html=True)
 
 with tab_quality:
     rejected = [p for p in promos if p["status"] == "rejected"]
@@ -500,3 +592,8 @@ with tab_quality:
             for p in rejected:
                 st.markdown(f"Ep {p['episode']} · {'; '.join(p['reasons'])} · "
                             f"_{clean(p.get('hook'))[:80]}_")
+
+st.markdown(
+    f'<div class="site-footer"><span>Promo finder · built by {config.AUTHOR}</span>'
+    f'<a href="{config.PROJECT_URL}" target="_blank">Code and run steps on GitHub</a></div>',
+    unsafe_allow_html=True)
