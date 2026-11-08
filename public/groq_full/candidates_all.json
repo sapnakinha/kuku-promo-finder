@@ -1,0 +1,4224 @@
+[
+ {
+  "id": "E001-C1",
+  "episode": 1,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E001-C2"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 1,
+    "start_line": "L12",
+    "end_line": "L31",
+    "start": 17.8,
+    "end": 50.4
+   }
+  ],
+  "duration": 32.6,
+  "hook_line": "L13",
+  "cliffhanger_line": "L31",
+  "score_hook": 7.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 4.0,
+  "final_score": 6.9
+ },
+ {
+  "id": "E001-C2",
+  "episode": 1,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 1,
+    "start_line": "L25",
+    "end_line": "L41",
+    "start": 36.5,
+    "end": 61.8
+   }
+  ],
+  "duration": 25.3,
+  "hook_line": "L27",
+  "cliffhanger_line": "L41",
+  "score_hook": 5.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 7.05
+ },
+ {
+  "id": "E001-C3",
+  "episode": 1,
+  "status": "rejected",
+  "reasons": [
+   "hook line (missing) not in script"
+  ],
+  "repairs": [],
+  "angle": "other"
+ },
+ {
+  "id": "E002-C1",
+  "episode": 2,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 2,
+    "start_line": "L2",
+    "end_line": "L16",
+    "start": 0.0,
+    "end": 23.8
+   }
+  ],
+  "duration": 23.8,
+  "hook_line": "L2",
+  "cliffhanger_line": "L16",
+  "score_hook": 7.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 7.13
+ },
+ {
+  "id": "E002-C2",
+  "episode": 2,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 2,
+    "start_line": "L54",
+    "end_line": "L68",
+    "start": 74.2,
+    "end": 98.2
+   }
+  ],
+  "duration": 24.0,
+  "hook_line": "L54",
+  "cliffhanger_line": "L68",
+  "score_hook": 8.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 7.0,
+  "final_score": 8.73
+ },
+ {
+  "id": "E002-C3",
+  "episode": 2,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 2,
+    "start_line": "L28",
+    "end_line": "L34",
+    "start": 37.5,
+    "end": 51.4
+   }
+  ],
+  "duration": 13.9,
+  "hook_line": "L28",
+  "cliffhanger_line": "L34"
+ },
+ {
+  "id": "E002-C4",
+  "episode": 2,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 2,
+    "start_line": "L48",
+    "end_line": "L52",
+    "start": 63.6,
+    "end": 72.7
+   }
+  ],
+  "duration": 9.1,
+  "hook_line": "L48",
+  "cliffhanger_line": "L52"
+ },
+ {
+  "id": "E003-C1",
+  "episode": 3,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.2s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 3,
+    "start_line": "L59",
+    "end_line": "L73",
+    "start": 69.9,
+    "end": 88.1
+   }
+  ],
+  "duration": 18.2,
+  "hook_line": "L59",
+  "cliffhanger_line": "L73"
+ },
+ {
+  "id": "E003-C2",
+  "episode": 3,
+  "status": "rejected",
+  "reasons": [
+   "too short (19.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 3,
+    "start_line": "L18",
+    "end_line": "L31",
+    "start": 22.8,
+    "end": 41.9
+   }
+  ],
+  "duration": 19.1,
+  "hook_line": "L19",
+  "cliffhanger_line": "L31"
+ },
+ {
+  "id": "E003-C3",
+  "episode": 3,
+  "status": "rejected",
+  "reasons": [
+   "too long (61.8s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 3,
+    "start_line": "L70",
+    "end_line": "L117",
+    "start": 84.0,
+    "end": 145.75
+   }
+  ],
+  "duration": 61.8,
+  "hook_line": "L71",
+  "cliffhanger_line": "L117"
+ },
+ {
+  "id": "E003-C4",
+  "episode": 3,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 3,
+    "start_line": "L94",
+    "end_line": "L112",
+    "start": 110.9,
+    "end": 135.5
+   }
+  ],
+  "duration": 24.6,
+  "hook_line": "L96",
+  "cliffhanger_line": "L112",
+  "score_hook": 6.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 7.41
+ },
+ {
+  "id": "E004-C1",
+  "episode": 4,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E004-C2"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 4,
+    "start_line": "L4",
+    "end_line": "L42",
+    "start": 3.2,
+    "end": 58.8
+   }
+  ],
+  "duration": 55.6,
+  "hook_line": "L5",
+  "cliffhanger_line": "L42",
+  "score_hook": 5.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 5.0,
+  "final_score": 5.59
+ },
+ {
+  "id": "E004-C2",
+  "episode": 4,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 4,
+    "start_line": "L1",
+    "end_line": "L40",
+    "start": 0.0,
+    "end": 55.8
+   }
+  ],
+  "duration": 55.8,
+  "hook_line": "L1",
+  "cliffhanger_line": "L40",
+  "score_hook": 7.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 5.0,
+  "final_score": 6.74
+ },
+ {
+  "id": "E004-C3",
+  "episode": 4,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 4,
+    "start_line": "L58",
+    "end_line": "L73",
+    "start": 79.0,
+    "end": 102.2
+   }
+  ],
+  "duration": 23.2,
+  "hook_line": "L58",
+  "cliffhanger_line": "L73",
+  "score_hook": 6.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 5.0,
+  "final_score": 5.99
+ },
+ {
+  "id": "E004-C4",
+  "episode": 4,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 4,
+    "start_line": "L86",
+    "end_line": "L101",
+    "start": 114.8,
+    "end": 138.8
+   }
+  ],
+  "duration": 24.0,
+  "hook_line": "L87",
+  "cliffhanger_line": "L101",
+  "score_hook": 6.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 4.0,
+  "final_score": 5.74
+ },
+ {
+  "id": "E005-C1",
+  "episode": 5,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 5,
+    "start_line": "L31",
+    "end_line": "L58",
+    "start": 54.0,
+    "end": 100.8
+   }
+  ],
+  "duration": 46.8,
+  "hook_line": "L32",
+  "cliffhanger_line": "L58",
+  "score_hook": 7.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 7.77
+ },
+ {
+  "id": "E005-C2",
+  "episode": 5,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 5,
+    "start_line": "L33",
+    "end_line": "L40",
+    "start": 55.5,
+    "end": 69.0
+   }
+  ],
+  "duration": 13.5,
+  "hook_line": "L33",
+  "cliffhanger_line": "L40"
+ },
+ {
+  "id": "E005-C3",
+  "episode": 5,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 5,
+    "start_line": "L45",
+    "end_line": "L53",
+    "start": 77.8,
+    "end": 91.0
+   }
+  ],
+  "duration": 13.2,
+  "hook_line": "L45",
+  "cliffhanger_line": "L53"
+ },
+ {
+  "id": "E005-C4",
+  "episode": 5,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 5,
+    "start_line": "L6",
+    "end_line": "L18",
+    "start": 6.6,
+    "end": 33.4
+   }
+  ],
+  "duration": 26.8,
+  "hook_line": "L7",
+  "cliffhanger_line": "L18",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 7.0,
+  "final_score": 7.52
+ },
+ {
+  "id": "E006-C1",
+  "episode": 6,
+  "status": "rejected",
+  "reasons": [
+   "too short (14.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 6,
+    "start_line": "L8",
+    "end_line": "L15",
+    "start": 7.1,
+    "end": 18.2
+   },
+   {
+    "episode": 6,
+    "start_line": "L31",
+    "end_line": "L31",
+    "start": 33.7,
+    "end": 36.7
+   }
+  ],
+  "duration": 14.1,
+  "hook_line": "L9",
+  "cliffhanger_line": "L31"
+ },
+ {
+  "id": "E006-C2",
+  "episode": 6,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 6,
+    "start_line": "L42",
+    "end_line": "L64",
+    "start": 46.4,
+    "end": 74.3
+   }
+  ],
+  "duration": 27.9,
+  "hook_line": "L43",
+  "cliffhanger_line": "L64",
+  "score_hook": 7.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 7.4
+ },
+ {
+  "id": "E006-C3",
+  "episode": 6,
+  "status": "rejected",
+  "reasons": [
+   "too short (10.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 6,
+    "start_line": "L14",
+    "end_line": "L18",
+    "start": 14.9,
+    "end": 20.9
+   },
+   {
+    "episode": 6,
+    "start_line": "L71",
+    "end_line": "L73",
+    "start": 81.0,
+    "end": 85.0
+   }
+  ],
+  "duration": 10.0,
+  "hook_line": "L15",
+  "cliffhanger_line": "L73"
+ },
+ {
+  "id": "E006-C4",
+  "episode": 6,
+  "status": "rejected",
+  "reasons": [
+   "too short (10.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 6,
+    "start_line": "L86",
+    "end_line": "L94",
+    "start": 98.4,
+    "end": 109.0
+   }
+  ],
+  "duration": 10.6,
+  "hook_line": "L86",
+  "cliffhanger_line": "L94"
+ },
+ {
+  "id": "E007-C1",
+  "episode": 7,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 7,
+    "start_line": "L9",
+    "end_line": "L34",
+    "start": 22.0,
+    "end": 74.0
+   }
+  ],
+  "duration": 52.0,
+  "hook_line": "L9",
+  "cliffhanger_line": "L34",
+  "score_hook": 5.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 6.93
+ },
+ {
+  "id": "E007-C2",
+  "episode": 7,
+  "status": "rejected",
+  "reasons": [
+   "too short (12.3s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 7,
+    "start_line": "L42",
+    "end_line": "L48",
+    "start": 81.5,
+    "end": 93.8
+   }
+  ],
+  "duration": 12.3,
+  "hook_line": "L42",
+  "cliffhanger_line": "L48"
+ },
+ {
+  "id": "E007-C3",
+  "episode": 7,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 7,
+    "start_line": "L53",
+    "end_line": "L58",
+    "start": 99.0,
+    "end": 116.0
+   }
+  ],
+  "duration": 17.0,
+  "hook_line": "L54",
+  "cliffhanger_line": "L58"
+ },
+ {
+  "id": "E007-C4",
+  "episode": 7,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E007-C1"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 7,
+    "start_line": "L15",
+    "end_line": "L26",
+    "start": 33.2,
+    "end": 54.6
+   }
+  ],
+  "duration": 21.4,
+  "hook_line": "L15",
+  "cliffhanger_line": "L26",
+  "score_hook": 4.0,
+  "score_cliffhanger": 3.0,
+  "score_standalone": 4.0,
+  "final_score": 4.53
+ },
+ {
+  "id": "E008-C1",
+  "episode": 8,
+  "status": "rejected",
+  "reasons": [
+   "too short (10.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 8,
+    "start_line": "L27",
+    "end_line": "L35",
+    "start": 31.9,
+    "end": 42.0
+   }
+  ],
+  "duration": 10.1,
+  "hook_line": "L29",
+  "cliffhanger_line": "L35"
+ },
+ {
+  "id": "E008-C2",
+  "episode": 8,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 8,
+    "start_line": "L51",
+    "end_line": "L59",
+    "start": 60.5,
+    "end": 72.1
+   }
+  ],
+  "duration": 11.6,
+  "hook_line": "L53",
+  "cliffhanger_line": "L59"
+ },
+ {
+  "id": "E008-C3",
+  "episode": 8,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 8,
+    "start_line": "L46",
+    "end_line": "L62",
+    "start": 53.3,
+    "end": 75.3
+   }
+  ],
+  "duration": 22.0,
+  "hook_line": "L47",
+  "cliffhanger_line": "L62",
+  "score_hook": 4.0,
+  "score_cliffhanger": 3.0,
+  "score_standalone": 4.0,
+  "final_score": 4.51
+ },
+ {
+  "id": "E009-C1",
+  "episode": 9,
+  "status": "rejected",
+  "reasons": [
+   "too short (12.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 9,
+    "start_line": "L5",
+    "end_line": "L8",
+    "start": 3.5,
+    "end": 11.2
+   },
+   {
+    "episode": 9,
+    "start_line": "L78",
+    "end_line": "L81",
+    "start": 97.2,
+    "end": 101.9
+   }
+  ],
+  "duration": 12.4,
+  "hook_line": "L6",
+  "cliffhanger_line": "L81"
+ },
+ {
+  "id": "E009-C2",
+  "episode": 9,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 9,
+    "start_line": "L9",
+    "end_line": "L24",
+    "start": 6.3,
+    "end": 33.8
+   }
+  ],
+  "duration": 27.5,
+  "hook_line": "L9",
+  "cliffhanger_line": "L24",
+  "score_hook": 8.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 6.0,
+  "final_score": 6.94
+ },
+ {
+  "id": "E009-C3",
+  "episode": 9,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 9,
+    "start_line": "L69",
+    "end_line": "L88",
+    "start": 86.6,
+    "end": 111.2
+   }
+  ],
+  "duration": 24.6,
+  "hook_line": "L69",
+  "cliffhanger_line": "L88",
+  "score_hook": 4.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 4.0,
+  "final_score": 5.54
+ },
+ {
+  "id": "E009-C4",
+  "episode": 9,
+  "status": "rejected",
+  "reasons": [
+   "too short (7.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 9,
+    "start_line": "L57",
+    "end_line": "L63",
+    "start": 74.5,
+    "end": 81.6
+   }
+  ],
+  "duration": 7.1,
+  "hook_line": "L58",
+  "cliffhanger_line": "L63"
+ },
+ {
+  "id": "E010-C1",
+  "episode": 10,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 10,
+    "start_line": "L5",
+    "end_line": "L30",
+    "start": 2.6,
+    "end": 38.9
+   }
+  ],
+  "duration": 36.3,
+  "hook_line": "L5",
+  "cliffhanger_line": "L30",
+  "score_hook": 8.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 6.0,
+  "final_score": 7.27
+ },
+ {
+  "id": "E010-C2",
+  "episode": 10,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 10,
+    "start_line": "L48",
+    "end_line": "L59",
+    "start": 63.9,
+    "end": 85.9
+   }
+  ],
+  "duration": 22.0,
+  "hook_line": "L48",
+  "cliffhanger_line": "L59",
+  "score_hook": 6.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 5.0,
+  "final_score": 5.87
+ },
+ {
+  "id": "E010-C3",
+  "episode": 10,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E010-C1"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 10,
+    "start_line": "L24",
+    "end_line": "L35",
+    "start": 25.5,
+    "end": 49.5
+   }
+  ],
+  "duration": 24.0,
+  "hook_line": "L24",
+  "cliffhanger_line": "L35",
+  "score_hook": 5.0,
+  "score_cliffhanger": 4.0,
+  "score_standalone": 6.0,
+  "final_score": 5.72
+ },
+ {
+  "id": "E010-C4",
+  "episode": 10,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 10,
+    "start_line": "L27",
+    "end_line": "L42",
+    "start": 33.2,
+    "end": 55.2
+   }
+  ],
+  "duration": 22.0,
+  "hook_line": "L27",
+  "cliffhanger_line": "L42",
+  "score_hook": 9.0,
+  "score_cliffhanger": 3.0,
+  "score_standalone": 6.0,
+  "final_score": 6.97
+ },
+ {
+  "id": "E011-C1",
+  "episode": 11,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 11,
+    "start_line": "L15",
+    "end_line": "L38",
+    "start": 16.8,
+    "end": 43.3
+   }
+  ],
+  "duration": 26.5,
+  "hook_line": "L16",
+  "cliffhanger_line": "L38",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 6.0,
+  "final_score": 7.95
+ },
+ {
+  "id": "E011-C2",
+  "episode": 11,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.4s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 11,
+    "start_line": "L78",
+    "end_line": "L84",
+    "start": 93.2,
+    "end": 106.6
+   }
+  ],
+  "duration": 13.4,
+  "hook_line": "L78",
+  "cliffhanger_line": "L84"
+ },
+ {
+  "id": "E011-C3",
+  "episode": 11,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.6s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 11,
+    "start_line": "L52",
+    "end_line": "L61",
+    "start": 58.0,
+    "end": 71.6
+   }
+  ],
+  "duration": 13.6,
+  "hook_line": "L52",
+  "cliffhanger_line": "L61"
+ },
+ {
+  "id": "E011-C4",
+  "episode": 11,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 11,
+    "start_line": "L66",
+    "end_line": "L74",
+    "start": 76.8,
+    "end": 90.0
+   }
+  ],
+  "duration": 13.2,
+  "hook_line": "L67",
+  "cliffhanger_line": "L74"
+ },
+ {
+  "id": "E012-C1",
+  "episode": 12,
+  "status": "rejected",
+  "reasons": [
+   "too long (60.6s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 12,
+    "start_line": "L1",
+    "end_line": "L39",
+    "start": 0.0,
+    "end": 60.6
+   }
+  ],
+  "duration": 60.6,
+  "hook_line": "L1",
+  "cliffhanger_line": "L39"
+ },
+ {
+  "id": "E012-C2",
+  "episode": 12,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 12,
+    "start_line": "L34",
+    "end_line": "L41",
+    "start": 46.7,
+    "end": 63.1
+   }
+  ],
+  "duration": 16.4,
+  "hook_line": "L34",
+  "cliffhanger_line": "L41"
+ },
+ {
+  "id": "E012-C3",
+  "episode": 12,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 12,
+    "start_line": "L47",
+    "end_line": "L55",
+    "start": 69.6,
+    "end": 87.21000000000001
+   }
+  ],
+  "duration": 17.6,
+  "hook_line": "L47",
+  "cliffhanger_line": "L55"
+ },
+ {
+  "id": "E012-C4",
+  "episode": 12,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 12,
+    "start_line": "L45",
+    "end_line": "L49",
+    "start": 65.4,
+    "end": 81.8
+   }
+  ],
+  "duration": 16.4,
+  "hook_line": "L45",
+  "cliffhanger_line": "L49"
+ },
+ {
+  "id": "E013-C1",
+  "episode": 13,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 13,
+    "start_line": "L5",
+    "end_line": "L31",
+    "start": 5.4,
+    "end": 53.0
+   }
+  ],
+  "duration": 47.6,
+  "hook_line": "L5",
+  "cliffhanger_line": "L31",
+  "score_hook": 5.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 6.81
+ },
+ {
+  "id": "E013-C2",
+  "episode": 13,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 13,
+    "start_line": "L36",
+    "end_line": "L45",
+    "start": 54.0,
+    "end": 71.2
+   }
+  ],
+  "duration": 17.2,
+  "hook_line": "L37",
+  "cliffhanger_line": "L45"
+ },
+ {
+  "id": "E013-C3",
+  "episode": 13,
+  "status": "rejected",
+  "reasons": [
+   "too short (19.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 13,
+    "start_line": "L57",
+    "end_line": "L66",
+    "start": 83.0,
+    "end": 102.5
+   }
+  ],
+  "duration": 19.5,
+  "hook_line": "L58",
+  "cliffhanger_line": "L66"
+ },
+ {
+  "id": "E013-C4",
+  "episode": 13,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.0s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 13,
+    "start_line": "L67",
+    "end_line": "L70",
+    "start": 103.0,
+    "end": 112.0
+   }
+  ],
+  "duration": 9.0,
+  "hook_line": "L67",
+  "cliffhanger_line": "L70"
+ },
+ {
+  "id": "E014-C1",
+  "episode": 14,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 14,
+    "start_line": "L1",
+    "end_line": "L13",
+    "start": 0.0,
+    "end": 18.0
+   }
+  ],
+  "duration": 18.0,
+  "hook_line": "L2",
+  "cliffhanger_line": "L13"
+ },
+ {
+  "id": "E014-C2",
+  "episode": 14,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 14,
+    "start_line": "L14",
+    "end_line": "L24",
+    "start": 18.5,
+    "end": 38.5
+   }
+  ],
+  "duration": 20.0,
+  "hook_line": "L15",
+  "cliffhanger_line": "L24",
+  "score_hook": 8.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 7.28
+ },
+ {
+  "id": "E014-C3",
+  "episode": 14,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.6s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 14,
+    "start_line": "L46",
+    "end_line": "L51",
+    "start": 76.0,
+    "end": 87.63
+   }
+  ],
+  "duration": 11.6,
+  "hook_line": "L46",
+  "cliffhanger_line": "L50"
+ },
+ {
+  "id": "E015-C1",
+  "episode": 15,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 15,
+    "start_line": "L10",
+    "end_line": "L42",
+    "start": 8.5,
+    "end": 62.0
+   }
+  ],
+  "duration": 53.5,
+  "hook_line": "L10",
+  "cliffhanger_line": "L42",
+  "score_hook": 7.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 6.0,
+  "final_score": 7.81
+ },
+ {
+  "id": "E015-C2",
+  "episode": 15,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E015-C1"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 15,
+    "start_line": "L12",
+    "end_line": "L31",
+    "start": 13.0,
+    "end": 46.4
+   }
+  ],
+  "duration": 33.4,
+  "hook_line": "L12",
+  "cliffhanger_line": "L31",
+  "score_hook": 6.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 6.46
+ },
+ {
+  "id": "E015-C3",
+  "episode": 15,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 15,
+    "start_line": "L45",
+    "end_line": "L55",
+    "start": 63.2,
+    "end": 86.0
+   }
+  ],
+  "duration": 22.8,
+  "hook_line": "L45",
+  "cliffhanger_line": "L55",
+  "score_hook": 5.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 6.0,
+  "final_score": 6.66
+ },
+ {
+  "id": "E015-C4",
+  "episode": 15,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E015-C1"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 15,
+    "start_line": "L25",
+    "end_line": "L53",
+    "start": 34.8,
+    "end": 82.4
+   }
+  ],
+  "duration": 47.6,
+  "hook_line": "L25",
+  "cliffhanger_line": "L53",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 6.81
+ },
+ {
+  "id": "E016-C1",
+  "episode": 16,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 16,
+    "start_line": "L4",
+    "end_line": "L44",
+    "start": 2.1,
+    "end": 52.2
+   }
+  ],
+  "duration": 50.1,
+  "hook_line": "L4",
+  "cliffhanger_line": "L44",
+  "score_hook": 7.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 6.0,
+  "final_score": 7.79
+ },
+ {
+  "id": "E016-C2",
+  "episode": 16,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E016-C1"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 16,
+    "start_line": "L14",
+    "end_line": "L40",
+    "start": 14.4,
+    "end": 47.4
+   }
+  ],
+  "duration": 33.0,
+  "hook_line": "L14",
+  "cliffhanger_line": "L40",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 7.59
+ },
+ {
+  "id": "E016-C3",
+  "episode": 16,
+  "status": "rejected",
+  "reasons": [
+   "too long (64.6s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 16,
+    "start_line": "L10",
+    "end_line": "L59",
+    "start": 11.2,
+    "end": 75.8
+   }
+  ],
+  "duration": 64.6,
+  "hook_line": "L10",
+  "cliffhanger_line": "L59"
+ },
+ {
+  "id": "E017-C1",
+  "episode": 17,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 17,
+    "start_line": "L22",
+    "end_line": "L29",
+    "start": 28.0,
+    "end": 39.0
+   }
+  ],
+  "duration": 11.0,
+  "hook_line": "L22",
+  "cliffhanger_line": "L29"
+ },
+ {
+  "id": "E017-C2",
+  "episode": 17,
+  "status": "rejected",
+  "reasons": [
+   "too short (10.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 17,
+    "start_line": "L55",
+    "end_line": "L62",
+    "start": 86.5,
+    "end": 97.0
+   }
+  ],
+  "duration": 10.5,
+  "hook_line": "L55",
+  "cliffhanger_line": "L62"
+ },
+ {
+  "id": "E017-C3",
+  "episode": 17,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 17,
+    "start_line": "L13",
+    "end_line": "L18",
+    "start": 16.8,
+    "end": 25.8
+   }
+  ],
+  "duration": 9.0,
+  "hook_line": "L13",
+  "cliffhanger_line": "L18"
+ },
+ {
+  "id": "E017-C4",
+  "episode": 17,
+  "status": "rejected",
+  "reasons": [
+   "too short (7.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 17,
+    "start_line": "L72",
+    "end_line": "L74",
+    "start": 108.3,
+    "end": 116.0
+   }
+  ],
+  "duration": 7.7,
+  "hook_line": "L72",
+  "cliffhanger_line": "L74"
+ },
+ {
+  "id": "E018-C1",
+  "episode": 18,
+  "status": "rejected",
+  "reasons": [
+   "hook line (missing) not in script"
+  ],
+  "repairs": [],
+  "angle": "other"
+ },
+ {
+  "id": "E019-C1",
+  "episode": 19,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 19,
+    "start_line": "L43",
+    "end_line": "L48",
+    "start": 76.5,
+    "end": 85.5
+   }
+  ],
+  "duration": 9.0,
+  "hook_line": "L43",
+  "cliffhanger_line": "L48"
+ },
+ {
+  "id": "E019-C2",
+  "episode": 19,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E019-C3"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 19,
+    "start_line": "L31",
+    "end_line": "L42",
+    "start": 49.5,
+    "end": 78.8
+   }
+  ],
+  "duration": 29.3,
+  "hook_line": "L31",
+  "cliffhanger_line": "L42",
+  "score_hook": 4.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 4.0,
+  "final_score": 4.98
+ },
+ {
+  "id": "E019-C3",
+  "episode": 19,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 19,
+    "start_line": "L30",
+    "end_line": "L36",
+    "start": 47.1,
+    "end": 70.6
+   }
+  ],
+  "duration": 23.5,
+  "hook_line": "L30",
+  "cliffhanger_line": "L36",
+  "score_hook": 6.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 6.38
+ },
+ {
+  "id": "E019-C4",
+  "episode": 19,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 19,
+    "start_line": "L59",
+    "end_line": "L63",
+    "start": 104.2,
+    "end": 119.63
+   }
+  ],
+  "duration": 15.4,
+  "hook_line": "L59",
+  "cliffhanger_line": "L63"
+ },
+ {
+  "id": "E020-C1",
+  "episode": 20,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 20,
+    "start_line": "L20",
+    "end_line": "L30",
+    "start": 30.2,
+    "end": 48.4
+   }
+  ],
+  "duration": 18.2,
+  "hook_line": "L20",
+  "cliffhanger_line": "L30"
+ },
+ {
+  "id": "E020-C2",
+  "episode": 20,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 20,
+    "start_line": "L41",
+    "end_line": "L46",
+    "start": 66.7,
+    "end": 76.2
+   }
+  ],
+  "duration": 9.5,
+  "hook_line": "L41",
+  "cliffhanger_line": "L46"
+ },
+ {
+  "id": "E020-C3",
+  "episode": 20,
+  "status": "rejected",
+  "reasons": [
+   "too long (71.8s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 20,
+    "start_line": "L18",
+    "end_line": "L60",
+    "start": 25.5,
+    "end": 97.3
+   }
+  ],
+  "duration": 71.8,
+  "hook_line": "L18",
+  "cliffhanger_line": "L60"
+ },
+ {
+  "id": "E020-C4",
+  "episode": 20,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 20,
+    "start_line": "L44",
+    "end_line": "L48",
+    "start": 70.6,
+    "end": 79.8
+   }
+  ],
+  "duration": 9.2,
+  "hook_line": "L44",
+  "cliffhanger_line": "L48"
+ },
+ {
+  "id": "E021-C1",
+  "episode": 21,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 21,
+    "start_line": "L3",
+    "end_line": "L5",
+    "start": 3.5,
+    "end": 8.0
+   },
+   {
+    "episode": 21,
+    "start_line": "L68",
+    "end_line": "L73",
+    "start": 96.5,
+    "end": 108.4
+   }
+  ],
+  "duration": 16.4,
+  "hook_line": "L5",
+  "cliffhanger_line": "L73"
+ },
+ {
+  "id": "E021-C2",
+  "episode": 21,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 21,
+    "start_line": "L66",
+    "end_line": "L73",
+    "start": 96.5,
+    "end": 108.4
+   }
+  ],
+  "duration": 11.9,
+  "hook_line": "L66",
+  "cliffhanger_line": "L73"
+ },
+ {
+  "id": "E021-C3",
+  "episode": 21,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 21,
+    "start_line": "L20",
+    "end_line": "L34",
+    "start": 31.0,
+    "end": 51.2
+   }
+  ],
+  "duration": 20.2,
+  "hook_line": "L22",
+  "cliffhanger_line": "L34",
+  "score_hook": 8.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 6.0,
+  "final_score": 8.09
+ },
+ {
+  "id": "E021-C4",
+  "episode": 21,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.3s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 21,
+    "start_line": "L30",
+    "end_line": "L42",
+    "start": 45.5,
+    "end": 60.8
+   }
+  ],
+  "duration": 15.3,
+  "hook_line": "L30",
+  "cliffhanger_line": "L42"
+ },
+ {
+  "id": "E022-C1",
+  "episode": 22,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 22,
+    "start_line": "L24",
+    "end_line": "L38",
+    "start": 43.0,
+    "end": 61.8
+   }
+  ],
+  "duration": 18.8,
+  "hook_line": "L26",
+  "cliffhanger_line": "L38"
+ },
+ {
+  "id": "E022-C2",
+  "episode": 22,
+  "status": "rejected",
+  "reasons": [
+   "too short (8.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 22,
+    "start_line": "L75",
+    "end_line": "L81",
+    "start": 123.0,
+    "end": 131.0
+   }
+  ],
+  "duration": 8.0,
+  "hook_line": "L75",
+  "cliffhanger_line": "L81"
+ },
+ {
+  "id": "E022-C3",
+  "episode": 22,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 22,
+    "start_line": "L5",
+    "end_line": "L22",
+    "start": 7.0,
+    "end": 42.5
+   }
+  ],
+  "duration": 35.5,
+  "hook_line": "L5",
+  "cliffhanger_line": "L22",
+  "score_hook": 5.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 5.92
+ },
+ {
+  "id": "E022-C4",
+  "episode": 22,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E022-C3"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 22,
+    "start_line": "L11",
+    "end_line": "L31",
+    "start": 19.1,
+    "end": 53.0
+   }
+  ],
+  "duration": 33.9,
+  "hook_line": "L11",
+  "cliffhanger_line": "L31",
+  "score_hook": 4.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 5.87
+ },
+ {
+  "id": "E023-C1",
+  "episode": 23,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 23,
+    "start_line": "L38",
+    "end_line": "L63",
+    "start": 76.0,
+    "end": 124.0
+   }
+  ],
+  "duration": 48.0,
+  "hook_line": "L40",
+  "cliffhanger_line": "L63",
+  "score_hook": 8.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 7.0,
+  "final_score": 8.65
+ },
+ {
+  "id": "E023-C2",
+  "episode": 23,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E023-C1"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 23,
+    "start_line": "L44",
+    "end_line": "L58",
+    "start": 84.5,
+    "end": 114.0
+   }
+  ],
+  "duration": 29.5,
+  "hook_line": "L45",
+  "cliffhanger_line": "L58",
+  "score_hook": 6.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 7.0
+ },
+ {
+  "id": "E024-C1",
+  "episode": 24,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 24,
+    "start_line": "L24",
+    "end_line": "L45",
+    "start": 32.5,
+    "end": 63.8
+   }
+  ],
+  "duration": 31.3,
+  "hook_line": "L24",
+  "cliffhanger_line": "L45",
+  "score_hook": 9.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 6.0,
+  "final_score": 8.43
+ },
+ {
+  "id": "E024-C2",
+  "episode": 24,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 24,
+    "start_line": "L52",
+    "end_line": "L60",
+    "start": 67.5,
+    "end": 78.5
+   }
+  ],
+  "duration": 11.0,
+  "hook_line": "L52",
+  "cliffhanger_line": "L60"
+ },
+ {
+  "id": "E024-C3",
+  "episode": 24,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E024-C1"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 24,
+    "start_line": "L21",
+    "end_line": "L38",
+    "start": 29.0,
+    "end": 51.5
+   }
+  ],
+  "duration": 22.5,
+  "hook_line": "L21",
+  "cliffhanger_line": "L38",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 6.63
+ },
+ {
+  "id": "E024-C4",
+  "episode": 24,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 24,
+    "start_line": "L6",
+    "end_line": "L18",
+    "start": 6.8,
+    "end": 28.8
+   }
+  ],
+  "duration": 22.0,
+  "hook_line": "L6",
+  "cliffhanger_line": "L18",
+  "score_hook": 7.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 7.0,
+  "final_score": 7.88
+ },
+ {
+  "id": "E025-C1",
+  "episode": 25,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 25,
+    "start_line": "L13",
+    "end_line": "L38",
+    "start": 16.8,
+    "end": 63.5
+   }
+  ],
+  "duration": 46.7,
+  "hook_line": "L14",
+  "cliffhanger_line": "L38",
+  "score_hook": 8.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 5.0,
+  "final_score": 7.06
+ },
+ {
+  "id": "E025-C2",
+  "episode": 25,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E025-C1"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 25,
+    "start_line": "L24",
+    "end_line": "L38",
+    "start": 36.0,
+    "end": 63.5
+   }
+  ],
+  "duration": 27.5,
+  "hook_line": "L24",
+  "cliffhanger_line": "L38",
+  "score_hook": 4.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 4.0,
+  "final_score": 4.86
+ },
+ {
+  "id": "E025-C3",
+  "episode": 25,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 25,
+    "start_line": "L38",
+    "end_line": "L51",
+    "start": 57.5,
+    "end": 85.0
+   }
+  ],
+  "duration": 27.5,
+  "hook_line": "L38",
+  "cliffhanger_line": "L51",
+  "score_hook": 7.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 5.0,
+  "final_score": 6.31
+ },
+ {
+  "id": "E025-C4",
+  "episode": 25,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 25,
+    "start_line": "L76",
+    "end_line": "L82",
+    "start": 128.0,
+    "end": 145.0
+   }
+  ],
+  "duration": 17.0,
+  "hook_line": "L77",
+  "cliffhanger_line": "L82"
+ },
+ {
+  "id": "E026-C1",
+  "episode": 26,
+  "status": "rejected",
+  "reasons": [
+   "too long (64.9s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 26,
+    "start_line": "L26",
+    "end_line": "L51",
+    "start": 56.0,
+    "end": 120.88
+   }
+  ],
+  "duration": 64.9,
+  "hook_line": "L26",
+  "cliffhanger_line": "L51"
+ },
+ {
+  "id": "E026-C2",
+  "episode": 26,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 26,
+    "start_line": "L34",
+    "end_line": "L51",
+    "start": 86.5,
+    "end": 120.88
+   }
+  ],
+  "duration": 34.4,
+  "hook_line": "L34",
+  "cliffhanger_line": "L51",
+  "score_hook": 6.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 6.94
+ },
+ {
+  "id": "E026-C3",
+  "episode": 26,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 26,
+    "start_line": "L15",
+    "end_line": "L21",
+    "start": 30.8,
+    "end": 47.0
+   }
+  ],
+  "duration": 16.2,
+  "hook_line": "L15",
+  "cliffhanger_line": "L21"
+ },
+ {
+  "id": "E027-C1",
+  "episode": 27,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 27,
+    "start_line": "L12",
+    "end_line": "L18",
+    "start": 17.2,
+    "end": 34.8
+   }
+  ],
+  "duration": 17.6,
+  "hook_line": "L12",
+  "cliffhanger_line": "L18"
+ },
+ {
+  "id": "E027-C2",
+  "episode": 27,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 27,
+    "start_line": "L26",
+    "end_line": "L31",
+    "start": 46.4,
+    "end": 55.6
+   }
+  ],
+  "duration": 9.2,
+  "hook_line": "L28",
+  "cliffhanger_line": "L31"
+ },
+ {
+  "id": "E027-C3",
+  "episode": 27,
+  "status": "rejected",
+  "reasons": [
+   "too short (10.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 27,
+    "start_line": "L39",
+    "end_line": "L44",
+    "start": 64.8,
+    "end": 74.8
+   }
+  ],
+  "duration": 10.0,
+  "hook_line": "L39",
+  "cliffhanger_line": "L44"
+ },
+ {
+  "id": "E027-C4",
+  "episode": 27,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 27,
+    "start_line": "L73",
+    "end_line": "L95",
+    "start": 115.1,
+    "end": 150.5
+   }
+  ],
+  "duration": 35.4,
+  "hook_line": "L73",
+  "cliffhanger_line": "L95",
+  "score_hook": 6.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 5.0,
+  "final_score": 6.92
+ },
+ {
+  "id": "E028-C1",
+  "episode": 28,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.6s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 28,
+    "start_line": "L68",
+    "end_line": "L77",
+    "start": 91.2,
+    "end": 107.8
+   }
+  ],
+  "duration": 16.6,
+  "hook_line": "L68",
+  "cliffhanger_line": "L77"
+ },
+ {
+  "id": "E028-C2",
+  "episode": 28,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 28,
+    "start_line": "L52",
+    "end_line": "L64",
+    "start": 70.5,
+    "end": 84.4
+   }
+  ],
+  "duration": 13.9,
+  "hook_line": "L53",
+  "cliffhanger_line": "L64"
+ },
+ {
+  "id": "E028-C3",
+  "episode": 28,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 28,
+    "start_line": "L22",
+    "end_line": "L46",
+    "start": 26.7,
+    "end": 61.2
+   }
+  ],
+  "duration": 34.5,
+  "hook_line": "L22",
+  "cliffhanger_line": "L46",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 7.35
+ },
+ {
+  "id": "E028-C4",
+  "episode": 28,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 28,
+    "start_line": "L86",
+    "end_line": "L96",
+    "start": 122.0,
+    "end": 138.5
+   }
+  ],
+  "duration": 16.5,
+  "hook_line": "L87",
+  "cliffhanger_line": "L96"
+ },
+ {
+  "id": "E029-C1",
+  "episode": 29,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 29,
+    "start_line": "L29",
+    "end_line": "L34",
+    "start": 46.9,
+    "end": 56.5
+   }
+  ],
+  "duration": 9.6,
+  "hook_line": "L30",
+  "cliffhanger_line": "L34"
+ },
+ {
+  "id": "E029-C2",
+  "episode": 29,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [
+   "trimmed end so the clip cuts on the cliffhanger"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 29,
+    "start_line": "L52",
+    "end_line": "L71",
+    "start": 83.0,
+    "end": 112.6
+   }
+  ],
+  "duration": 29.6,
+  "hook_line": "L53",
+  "cliffhanger_line": "L71",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 4.0,
+  "final_score": 7.08
+ },
+ {
+  "id": "E029-C3",
+  "episode": 29,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 29,
+    "start_line": "L37",
+    "end_line": "L42",
+    "start": 59.2,
+    "end": 69.1
+   }
+  ],
+  "duration": 9.9,
+  "hook_line": "L38",
+  "cliffhanger_line": "L42"
+ },
+ {
+  "id": "E030-C1",
+  "episode": 30,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 30,
+    "start_line": "L17",
+    "end_line": "L21",
+    "start": 33.4,
+    "end": 43.5
+   },
+   {
+    "episode": 30,
+    "start_line": "L43",
+    "end_line": "L47",
+    "start": 85.8,
+    "end": 93.4
+   }
+  ],
+  "duration": 17.7,
+  "hook_line": "L19",
+  "cliffhanger_line": "L47"
+ },
+ {
+  "id": "E030-C2",
+  "episode": 30,
+  "status": "rejected",
+  "reasons": [
+   "too short (12.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 30,
+    "start_line": "L28",
+    "end_line": "L31",
+    "start": 54.6,
+    "end": 62.5
+   },
+   {
+    "episode": 30,
+    "start_line": "L41",
+    "end_line": "L43",
+    "start": 83.2,
+    "end": 87.8
+   }
+  ],
+  "duration": 12.5,
+  "hook_line": "L29",
+  "cliffhanger_line": "L43"
+ },
+ {
+  "id": "E030-C3",
+  "episode": 30,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 30,
+    "start_line": "L48",
+    "end_line": "L49",
+    "start": 94.5,
+    "end": 101.8
+   },
+   {
+    "episode": 30,
+    "start_line": "L67",
+    "end_line": "L71",
+    "start": 137.5,
+    "end": 151.21
+   }
+  ],
+  "duration": 21.0,
+  "hook_line": "L49",
+  "cliffhanger_line": "L71",
+  "score_hook": 5.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 4.0,
+  "final_score": 5.86
+ },
+ {
+  "id": "E030-C4",
+  "episode": 30,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 30,
+    "start_line": "L62",
+    "end_line": "L65",
+    "start": 125.1,
+    "end": 136.2
+   }
+  ],
+  "duration": 11.1,
+  "hook_line": "L63",
+  "cliffhanger_line": "L65"
+ },
+ {
+  "id": "E031-C1",
+  "episode": 31,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 31,
+    "start_line": "L16",
+    "end_line": "L36",
+    "start": 24.5,
+    "end": 65.3
+   }
+  ],
+  "duration": 40.8,
+  "hook_line": "L17",
+  "cliffhanger_line": "L36",
+  "score_hook": 6.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 8.0,
+  "final_score": 6.54
+ },
+ {
+  "id": "E031-C2",
+  "episode": 31,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 31,
+    "start_line": "L66",
+    "end_line": "L80",
+    "start": 118.4,
+    "end": 143.8
+   }
+  ],
+  "duration": 25.4,
+  "hook_line": "L66",
+  "cliffhanger_line": "L80",
+  "score_hook": 7.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 7.0,
+  "final_score": 7.04
+ },
+ {
+  "id": "E031-C3",
+  "episode": 31,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 31,
+    "start_line": "L72",
+    "end_line": "L87",
+    "start": 133.0,
+    "end": 160.0
+   }
+  ],
+  "duration": 27.0,
+  "hook_line": "L72",
+  "cliffhanger_line": "L87",
+  "score_hook": 8.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 6.0,
+  "final_score": 8.24
+ },
+ {
+  "id": "E032-C1",
+  "episode": 32,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 32,
+    "start_line": "L1",
+    "end_line": "L17",
+    "start": 0.0,
+    "end": 22.0
+   }
+  ],
+  "duration": 22.0,
+  "hook_line": "L1",
+  "cliffhanger_line": "L17",
+  "score_hook": 9.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 7.0,
+  "final_score": 8.52
+ },
+ {
+  "id": "E032-C2",
+  "episode": 32,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 32,
+    "start_line": "L54",
+    "end_line": "L66",
+    "start": 71.2,
+    "end": 86.2
+   }
+  ],
+  "duration": 15.0,
+  "hook_line": "L55",
+  "cliffhanger_line": "L66"
+ },
+ {
+  "id": "E032-C3",
+  "episode": 32,
+  "status": "rejected",
+  "reasons": [
+   "too short (6.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 32,
+    "start_line": "L86",
+    "end_line": "L89",
+    "start": 112.8,
+    "end": 119.5
+   }
+  ],
+  "duration": 6.7,
+  "hook_line": "L86",
+  "cliffhanger_line": "L89"
+ },
+ {
+  "id": "E032-C4",
+  "episode": 32,
+  "status": "rejected",
+  "reasons": [
+   "too short (19.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 32,
+    "start_line": "L103",
+    "end_line": "L117",
+    "start": 135.0,
+    "end": 154.38
+   }
+  ],
+  "duration": 19.4,
+  "hook_line": "L103",
+  "cliffhanger_line": "L117"
+ },
+ {
+  "id": "E033-C1",
+  "episode": 33,
+  "status": "rejected",
+  "reasons": [
+   "too short (8.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 33,
+    "start_line": "L39",
+    "end_line": "L43",
+    "start": 64.2,
+    "end": 73.0
+   }
+  ],
+  "duration": 8.8,
+  "hook_line": "L40",
+  "cliffhanger_line": "L43"
+ },
+ {
+  "id": "E033-C2",
+  "episode": 33,
+  "status": "rejected",
+  "reasons": [
+   "too short (13.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 33,
+    "start_line": "L74",
+    "end_line": "L81",
+    "start": 123.5,
+    "end": 137.0
+   }
+  ],
+  "duration": 13.5,
+  "hook_line": "L75",
+  "cliffhanger_line": "L81"
+ },
+ {
+  "id": "E033-C3",
+  "episode": 33,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 33,
+    "start_line": "L86",
+    "end_line": "L92",
+    "start": 144.8,
+    "end": 156.0
+   }
+  ],
+  "duration": 11.2,
+  "hook_line": "L88",
+  "cliffhanger_line": "L92"
+ },
+ {
+  "id": "E033-C4",
+  "episode": 33,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 33,
+    "start_line": "L53",
+    "end_line": "L60",
+    "start": 89.0,
+    "end": 100.0
+   }
+  ],
+  "duration": 11.0,
+  "hook_line": "L54",
+  "cliffhanger_line": "L60"
+ },
+ {
+  "id": "E034-C1",
+  "episode": 34,
+  "status": "rejected",
+  "reasons": [
+   "too short (8.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 34,
+    "start_line": "L48",
+    "end_line": "L56",
+    "start": 85.0,
+    "end": 93.2
+   }
+  ],
+  "duration": 8.2,
+  "hook_line": "L50",
+  "cliffhanger_line": "L56"
+ },
+ {
+  "id": "E034-C2",
+  "episode": 34,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 34,
+    "start_line": "L76",
+    "end_line": "L87",
+    "start": 119.8,
+    "end": 138.4
+   }
+  ],
+  "duration": 18.6,
+  "hook_line": "L77",
+  "cliffhanger_line": "L87"
+ },
+ {
+  "id": "E034-C3",
+  "episode": 34,
+  "status": "rejected",
+  "reasons": [
+   "too short (14.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 34,
+    "start_line": "L90",
+    "end_line": "L98",
+    "start": 142.2,
+    "end": 156.4
+   }
+  ],
+  "duration": 14.2,
+  "hook_line": "L91",
+  "cliffhanger_line": "L98"
+ },
+ {
+  "id": "E034-C4",
+  "episode": 34,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 34,
+    "start_line": "L100",
+    "end_line": "L116",
+    "start": 157.0,
+    "end": 190.0
+   }
+  ],
+  "duration": 33.0,
+  "hook_line": "L100",
+  "cliffhanger_line": "L116",
+  "score_hook": 8.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 7.0,
+  "final_score": 8.43
+ },
+ {
+  "id": "E035-C1",
+  "episode": 35,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 35,
+    "start_line": "L15",
+    "end_line": "L28",
+    "start": 27.5,
+    "end": 58.0
+   }
+  ],
+  "duration": 30.5,
+  "hook_line": "L16",
+  "cliffhanger_line": "L28",
+  "score_hook": 6.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 7.0,
+  "final_score": 6.21
+ },
+ {
+  "id": "E035-C2",
+  "episode": 35,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [
+   "trimmed end so the clip cuts on the cliffhanger"
+  ],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 35,
+    "start_line": "L56",
+    "end_line": "L70",
+    "start": 122.0,
+    "end": 150.0
+   }
+  ],
+  "duration": 28.0,
+  "hook_line": "L57",
+  "cliffhanger_line": "L70",
+  "score_hook": 8.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 5.0,
+  "final_score": 7.91
+ },
+ {
+  "id": "E035-C3",
+  "episode": 35,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E035-C1"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 35,
+    "start_line": "L3",
+    "end_line": "L22",
+    "start": 5.5,
+    "end": 44.2
+   }
+  ],
+  "duration": 38.7,
+  "hook_line": "L3",
+  "cliffhanger_line": "L22",
+  "score_hook": 4.0,
+  "score_cliffhanger": 6.0,
+  "score_standalone": 8.0,
+  "final_score": 6.01
+ },
+ {
+  "id": "E036-C1",
+  "episode": 36,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 36,
+    "start_line": "L61",
+    "end_line": "L85",
+    "start": 99.0,
+    "end": 138.8
+   }
+  ],
+  "duration": 39.8,
+  "hook_line": "L62",
+  "cliffhanger_line": "L85",
+  "score_hook": 8.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 6.0,
+  "final_score": 8.14
+ },
+ {
+  "id": "E036-C2",
+  "episode": 36,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 36,
+    "start_line": "L86",
+    "end_line": "L96",
+    "start": 139.0,
+    "end": 156.0
+   }
+  ],
+  "duration": 17.0,
+  "hook_line": "L87",
+  "cliffhanger_line": "L96"
+ },
+ {
+  "id": "E036-C3",
+  "episode": 36,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 36,
+    "start_line": "L97",
+    "end_line": "L119",
+    "start": 156.5,
+    "end": 196.8
+   }
+  ],
+  "duration": 40.3,
+  "hook_line": "L98",
+  "cliffhanger_line": "L119",
+  "score_hook": 9.0,
+  "score_cliffhanger": 10.0,
+  "score_standalone": 7.0,
+  "final_score": 9.14
+ },
+ {
+  "id": "E036-C4",
+  "episode": 36,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E036-C3"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 36,
+    "start_line": "L103",
+    "end_line": "L119",
+    "start": 167.0,
+    "end": 196.8
+   }
+  ],
+  "duration": 29.8,
+  "hook_line": "L104",
+  "cliffhanger_line": "L119",
+  "score_hook": 6.0,
+  "score_cliffhanger": 10.0,
+  "score_standalone": 5.0,
+  "final_score": 7.44
+ },
+ {
+  "id": "E037-C1",
+  "episode": 37,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 37,
+    "start_line": "L11",
+    "end_line": "L16",
+    "start": 18.8,
+    "end": 29.8
+   }
+  ],
+  "duration": 11.0,
+  "hook_line": "L12",
+  "cliffhanger_line": "L16"
+ },
+ {
+  "id": "E037-C2",
+  "episode": 37,
+  "status": "rejected",
+  "reasons": [
+   "too short (8.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 37,
+    "start_line": "L31",
+    "end_line": "L36",
+    "start": 53.0,
+    "end": 61.8
+   }
+  ],
+  "duration": 8.8,
+  "hook_line": "L32",
+  "cliffhanger_line": "L36"
+ },
+ {
+  "id": "E037-C3",
+  "episode": 37,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 37,
+    "start_line": "L51",
+    "end_line": "L59",
+    "start": 92.0,
+    "end": 107.8
+   }
+  ],
+  "duration": 15.8,
+  "hook_line": "L52",
+  "cliffhanger_line": "L59"
+ },
+ {
+  "id": "E037-C4",
+  "episode": 37,
+  "status": "rejected",
+  "reasons": [
+   "too short (19.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 37,
+    "start_line": "L70",
+    "end_line": "L76",
+    "start": 127.0,
+    "end": 146.5
+   }
+  ],
+  "duration": 19.5,
+  "hook_line": "L71",
+  "cliffhanger_line": "L76"
+ },
+ {
+  "id": "E038-C1",
+  "episode": 38,
+  "status": "rejected",
+  "reasons": [
+   "too short (11.0s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 38,
+    "start_line": "L9",
+    "end_line": "L14",
+    "start": 11.0,
+    "end": 22.0
+   }
+  ],
+  "duration": 11.0,
+  "hook_line": "L9",
+  "cliffhanger_line": "L14"
+ },
+ {
+  "id": "E038-C2",
+  "episode": 38,
+  "status": "rejected",
+  "reasons": [
+   "too short (3.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 38,
+    "start_line": "L39",
+    "end_line": "L41",
+    "start": 60.5,
+    "end": 64.2
+   }
+  ],
+  "duration": 3.7,
+  "hook_line": "L40",
+  "cliffhanger_line": "L41"
+ },
+ {
+  "id": "E038-C3",
+  "episode": 38,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.0s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 38,
+    "start_line": "L46",
+    "end_line": "L55",
+    "start": 69.0,
+    "end": 84.0
+   }
+  ],
+  "duration": 15.0,
+  "hook_line": "L46",
+  "cliffhanger_line": "L55"
+ },
+ {
+  "id": "E039-C1",
+  "episode": 39,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 39,
+    "start_line": "L31",
+    "end_line": "L59",
+    "start": 50.0,
+    "end": 98.41
+   }
+  ],
+  "duration": 48.4,
+  "hook_line": "L31",
+  "cliffhanger_line": "L59",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 8.0,
+  "final_score": 7.87
+ },
+ {
+  "id": "E039-C2",
+  "episode": 39,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 39,
+    "start_line": "L21",
+    "end_line": "L30",
+    "start": 32.4,
+    "end": 49.2
+   }
+  ],
+  "duration": 16.8,
+  "hook_line": "L21",
+  "cliffhanger_line": "L30"
+ },
+ {
+  "id": "E039-C3",
+  "episode": 39,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E039-C1"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 39,
+    "start_line": "L44",
+    "end_line": "L59",
+    "start": 68.5,
+    "end": 98.41
+   }
+  ],
+  "duration": 29.9,
+  "hook_line": "L45",
+  "cliffhanger_line": "L59",
+  "score_hook": 4.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 5.52
+ },
+ {
+  "id": "E040-C1",
+  "episode": 40,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 40,
+    "start_line": "L11",
+    "end_line": "L15",
+    "start": 23.0,
+    "end": 29.9
+   },
+   {
+    "episode": 40,
+    "start_line": "L37",
+    "end_line": "L38",
+    "start": 74.5,
+    "end": 77.4
+   }
+  ],
+  "duration": 9.8,
+  "hook_line": "L12",
+  "cliffhanger_line": "L38"
+ },
+ {
+  "id": "E040-C2",
+  "episode": 40,
+  "status": "rejected",
+  "reasons": [
+   "too short (12.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 40,
+    "start_line": "L32",
+    "end_line": "L38",
+    "start": 65.0,
+    "end": 77.4
+   }
+  ],
+  "duration": 12.4,
+  "hook_line": "L32",
+  "cliffhanger_line": "L38"
+ },
+ {
+  "id": "E040-C3",
+  "episode": 40,
+  "status": "rejected",
+  "reasons": [
+   "too short (7.1s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 40,
+    "start_line": "L23",
+    "end_line": "L25",
+    "start": 44.1,
+    "end": 48.3
+   },
+   {
+    "episode": 40,
+    "start_line": "L37",
+    "end_line": "L38",
+    "start": 74.5,
+    "end": 77.4
+   }
+  ],
+  "duration": 7.1,
+  "hook_line": "L24",
+  "cliffhanger_line": "L38"
+ },
+ {
+  "id": "E041-C1",
+  "episode": 41,
+  "status": "rejected",
+  "reasons": [
+   "too long (82.1s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 41,
+    "start_line": "L10",
+    "end_line": "L53",
+    "start": 14.0,
+    "end": 96.09
+   }
+  ],
+  "duration": 82.1,
+  "hook_line": "L10",
+  "cliffhanger_line": "L53"
+ },
+ {
+  "id": "E041-C2",
+  "episode": 41,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 41,
+    "start_line": "L2",
+    "end_line": "L34",
+    "start": 1.8,
+    "end": 60.5
+   }
+  ],
+  "duration": 58.7,
+  "hook_line": "L2",
+  "cliffhanger_line": "L34",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 8.0,
+  "final_score": 7.83
+ },
+ {
+  "id": "E041-C3",
+  "episode": 41,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 41,
+    "start_line": "L46",
+    "end_line": "L53",
+    "start": 80.5,
+    "end": 96.09
+   }
+  ],
+  "duration": 15.6,
+  "hook_line": "L47",
+  "cliffhanger_line": "L53"
+ },
+ {
+  "id": "E042-C1",
+  "episode": 42,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 42,
+    "start_line": "L1",
+    "end_line": "L17",
+    "start": 0.0,
+    "end": 28.8
+   }
+  ],
+  "duration": 28.8,
+  "hook_line": "L2",
+  "cliffhanger_line": "L17",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 6.0,
+  "final_score": 7.31
+ },
+ {
+  "id": "E042-C2",
+  "episode": 42,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 42,
+    "start_line": "L22",
+    "end_line": "L37",
+    "start": 33.8,
+    "end": 77.5
+   }
+  ],
+  "duration": 43.7,
+  "hook_line": "L23",
+  "cliffhanger_line": "L37",
+  "score_hook": 6.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 8.0,
+  "final_score": 7.71
+ },
+ {
+  "id": "E042-C3",
+  "episode": 42,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E042-C2"
+  ],
+  "repairs": [],
+  "angle": "family conflict",
+  "segments": [
+   {
+    "episode": 42,
+    "start_line": "L24",
+    "end_line": "L34",
+    "start": 39.9,
+    "end": 72.4
+   }
+  ],
+  "duration": 32.5,
+  "hook_line": "L25",
+  "cliffhanger_line": "L34",
+  "score_hook": 5.0,
+  "score_cliffhanger": 5.0,
+  "score_standalone": 7.0,
+  "final_score": 5.66
+ },
+ {
+  "id": "E043-C1",
+  "episode": 43,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 43,
+    "start_line": "L4",
+    "end_line": "L19",
+    "start": 3.8,
+    "end": 21.5
+   }
+  ],
+  "duration": 17.7,
+  "hook_line": "L5",
+  "cliffhanger_line": "L19"
+ },
+ {
+  "id": "E043-C2",
+  "episode": 43,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 43,
+    "start_line": "L24",
+    "end_line": "L52",
+    "start": 26.0,
+    "end": 64.2
+   }
+  ],
+  "duration": 38.2,
+  "hook_line": "L25",
+  "cliffhanger_line": "L52",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 4.0,
+  "final_score": 5.99
+ },
+ {
+  "id": "E043-C3",
+  "episode": 43,
+  "status": "rejected",
+  "reasons": [
+   "too short (8.8s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 43,
+    "start_line": "L56",
+    "end_line": "L64",
+    "start": 68.8,
+    "end": 77.6
+   }
+  ],
+  "duration": 8.8,
+  "hook_line": "L57",
+  "cliffhanger_line": "L64"
+ },
+ {
+  "id": "E043-C4",
+  "episode": 43,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.2s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 43,
+    "start_line": "L77",
+    "end_line": "L87",
+    "start": 99.8,
+    "end": 114.96000000000001
+   }
+  ],
+  "duration": 15.2,
+  "hook_line": "L78",
+  "cliffhanger_line": "L86"
+ },
+ {
+  "id": "E044-C1",
+  "episode": 44,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 44,
+    "start_line": "L4",
+    "end_line": "L13",
+    "start": 3.3,
+    "end": 19.3
+   },
+   {
+    "episode": 44,
+    "start_line": "L28",
+    "end_line": "L37",
+    "start": 38.8,
+    "end": 51.0
+   }
+  ],
+  "duration": 28.2,
+  "hook_line": "L4",
+  "cliffhanger_line": "L37",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 7.02
+ },
+ {
+  "id": "E044-C2",
+  "episode": 44,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E044-C3"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 44,
+    "start_line": "L18",
+    "end_line": "L54",
+    "start": 25.2,
+    "end": 70.4
+   }
+  ],
+  "duration": 45.2,
+  "hook_line": "L18",
+  "cliffhanger_line": "L54",
+  "score_hook": 5.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 7.0,
+  "final_score": 7.02
+ },
+ {
+  "id": "E044-C3",
+  "episode": 44,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 44,
+    "start_line": "L35",
+    "end_line": "L54",
+    "start": 46.6,
+    "end": 70.4
+   }
+  ],
+  "duration": 23.8,
+  "hook_line": "L35",
+  "cliffhanger_line": "L54",
+  "score_hook": 6.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 6.0,
+  "final_score": 7.17
+ },
+ {
+  "id": "E045-C1",
+  "episode": 45,
+  "status": "rejected",
+  "reasons": [
+   "too short (17.5s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 45,
+    "start_line": "L9",
+    "end_line": "L21",
+    "start": 9.9,
+    "end": 27.4
+   }
+  ],
+  "duration": 17.5,
+  "hook_line": "L9",
+  "cliffhanger_line": "L21"
+ },
+ {
+  "id": "E045-C2",
+  "episode": 45,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 45,
+    "start_line": "L50",
+    "end_line": "L70",
+    "start": 71.5,
+    "end": 113.0
+   }
+  ],
+  "duration": 41.5,
+  "hook_line": "L50",
+  "cliffhanger_line": "L70",
+  "score_hook": 6.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 8.0,
+  "final_score": 7.65
+ },
+ {
+  "id": "E045-C3",
+  "episode": 45,
+  "status": "rejected",
+  "reasons": [
+   "too short (18.7s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 45,
+    "start_line": "L39",
+    "end_line": "L47",
+    "start": 51.8,
+    "end": 70.5
+   }
+  ],
+  "duration": 18.7,
+  "hook_line": "L40",
+  "cliffhanger_line": "L47"
+ },
+ {
+  "id": "E046-C1",
+  "episode": 46,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 46,
+    "start_line": "L7",
+    "end_line": "L32",
+    "start": 11.0,
+    "end": 58.0
+   }
+  ],
+  "duration": 47.0,
+  "hook_line": "L8",
+  "cliffhanger_line": "L32",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 5.0,
+  "final_score": 6.18
+ },
+ {
+  "id": "E046-C2",
+  "episode": 46,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 46,
+    "start_line": "L33",
+    "end_line": "L46",
+    "start": 58.2,
+    "end": 85.5
+   }
+  ],
+  "duration": 27.3,
+  "hook_line": "L34",
+  "cliffhanger_line": "L46",
+  "score_hook": 9.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 7.0,
+  "final_score": 8.23
+ },
+ {
+  "id": "E046-C3",
+  "episode": 46,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 46,
+    "start_line": "L57",
+    "end_line": "L71",
+    "start": 101.8,
+    "end": 138.5
+   }
+  ],
+  "duration": 36.7,
+  "hook_line": "L58",
+  "cliffhanger_line": "L71",
+  "score_hook": 7.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 6.0,
+  "final_score": 7.53
+ },
+ {
+  "id": "E046-C4",
+  "episode": 46,
+  "status": "rejected",
+  "reasons": [
+   "too short (9.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 46,
+    "start_line": "L47",
+    "end_line": "L50",
+    "start": 85.8,
+    "end": 92.4
+   },
+   {
+    "episode": 46,
+    "start_line": "L74",
+    "end_line": "L75",
+    "start": 140.5,
+    "end": 143.8
+   }
+  ],
+  "duration": 9.9,
+  "hook_line": "L48",
+  "cliffhanger_line": "L75"
+ },
+ {
+  "id": "E047-C1",
+  "episode": 47,
+  "status": "rejected",
+  "reasons": [
+   "too long (74.4s > 60s)"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 47,
+    "start_line": "L26",
+    "end_line": "L69",
+    "start": 56.8,
+    "end": 131.2
+   }
+  ],
+  "duration": 74.4,
+  "hook_line": "L27",
+  "cliffhanger_line": "L69"
+ },
+ {
+  "id": "E047-C2",
+  "episode": 47,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 47,
+    "start_line": "L40",
+    "end_line": "L57",
+    "start": 81.8,
+    "end": 108.5
+   }
+  ],
+  "duration": 26.7,
+  "hook_line": "L41",
+  "cliffhanger_line": "L57",
+  "score_hook": 8.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 6.0,
+  "final_score": 7.21
+ },
+ {
+  "id": "E047-C3",
+  "episode": 47,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 47,
+    "start_line": "L12",
+    "end_line": "L24",
+    "start": 23.4,
+    "end": 54.8
+   }
+  ],
+  "duration": 31.4,
+  "hook_line": "L12",
+  "cliffhanger_line": "L24",
+  "score_hook": 4.0,
+  "score_cliffhanger": 3.0,
+  "score_standalone": 7.0,
+  "final_score": 4.46
+ },
+ {
+  "id": "E047-C4",
+  "episode": 47,
+  "status": "rejected",
+  "reasons": [
+   "too short (19.4s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 47,
+    "start_line": "L2",
+    "end_line": "L9",
+    "start": 1.8,
+    "end": 21.2
+   }
+  ],
+  "duration": 19.4,
+  "hook_line": "L3",
+  "cliffhanger_line": "L9"
+ },
+ {
+  "id": "E048-C1",
+  "episode": 48,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "revenge",
+  "segments": [
+   {
+    "episode": 48,
+    "start_line": "L1",
+    "end_line": "L14",
+    "start": 0.0,
+    "end": 26.5
+   }
+  ],
+  "duration": 26.5,
+  "hook_line": "L3",
+  "cliffhanger_line": "L14",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 4.0,
+  "final_score": 5.89
+ },
+ {
+  "id": "E048-C2",
+  "episode": 48,
+  "status": "rejected",
+  "reasons": [
+   "too short (12.1s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "mystery",
+  "segments": [
+   {
+    "episode": 48,
+    "start_line": "L18",
+    "end_line": "L25",
+    "start": 30.9,
+    "end": 43.0
+   }
+  ],
+  "duration": 12.1,
+  "hook_line": "L18",
+  "cliffhanger_line": "L25"
+ },
+ {
+  "id": "E048-C3",
+  "episode": 48,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 48,
+    "start_line": "L26",
+    "end_line": "L41",
+    "start": 43.0,
+    "end": 73.4
+   }
+  ],
+  "duration": 30.4,
+  "hook_line": "L27",
+  "cliffhanger_line": "L41",
+  "score_hook": 8.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 7.0,
+  "final_score": 7.79
+ },
+ {
+  "id": "E048-C4",
+  "episode": 48,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E048-C3"
+  ],
+  "repairs": [],
+  "angle": "humiliation",
+  "segments": [
+   {
+    "episode": 48,
+    "start_line": "L23",
+    "end_line": "L43",
+    "start": 34.2,
+    "end": 80.0
+   }
+  ],
+  "duration": 45.8,
+  "hook_line": "L23",
+  "cliffhanger_line": "L43",
+  "score_hook": 7.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 8.0,
+  "final_score": 7.29
+ },
+ {
+  "id": "E049-C1",
+  "episode": 49,
+  "status": "rejected",
+  "reasons": [
+   "too short (16.6s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 49,
+    "start_line": "L18",
+    "end_line": "L20",
+    "start": 33.5,
+    "end": 46.5
+   },
+   {
+    "episode": 49,
+    "start_line": "L40",
+    "end_line": "L41",
+    "start": 94.2,
+    "end": 97.8
+   }
+  ],
+  "duration": 16.6,
+  "hook_line": "L18",
+  "cliffhanger_line": "L41"
+ },
+ {
+  "id": "E049-C2",
+  "episode": 49,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 49,
+    "start_line": "L35",
+    "end_line": "L37",
+    "start": 77.2,
+    "end": 91.2
+   },
+   {
+    "episode": 49,
+    "start_line": "L50",
+    "end_line": "L52",
+    "start": 118.2,
+    "end": 128.5
+   }
+  ],
+  "duration": 24.3,
+  "hook_line": "L35",
+  "cliffhanger_line": "L52",
+  "score_hook": 6.0,
+  "score_cliffhanger": 7.0,
+  "score_standalone": 4.0,
+  "final_score": 5.87
+ },
+ {
+  "id": "E049-C3",
+  "episode": 49,
+  "status": "rejected",
+  "reasons": [
+   "too short (15.9s < 20s)"
+  ],
+  "repairs": [],
+  "angle": "romance",
+  "segments": [
+   {
+    "episode": 49,
+    "start_line": "L53",
+    "end_line": "L63",
+    "start": 128.8,
+    "end": 144.75
+   }
+  ],
+  "duration": 15.9,
+  "hook_line": "L54",
+  "cliffhanger_line": "L63"
+ },
+ {
+  "id": "E050-C1",
+  "episode": 50,
+  "status": "valid",
+  "reasons": [],
+  "repairs": [],
+  "angle": "betrayal",
+  "segments": [
+   {
+    "episode": 50,
+    "start_line": "L11",
+    "end_line": "L21",
+    "start": 16.8,
+    "end": 42.5
+   }
+  ],
+  "duration": 25.7,
+  "hook_line": "L11",
+  "cliffhanger_line": "L21",
+  "score_hook": 9.0,
+  "score_cliffhanger": 8.0,
+  "score_standalone": 6.0,
+  "final_score": 7.9
+ },
+ {
+  "id": "E050-C2",
+  "episode": 50,
+  "status": "rejected",
+  "reasons": [
+   "too short (6.0s < 20s)"
+  ],
+  "repairs": [
+   "trimmed start so the clip opens on the hook"
+  ],
+  "angle": "danger or threat",
+  "segments": [
+   {
+    "episode": 50,
+    "start_line": "L36",
+    "end_line": "L40",
+    "start": 74.0,
+    "end": 80.0
+   }
+  ],
+  "duration": 6.0,
+  "hook_line": "L36",
+  "cliffhanger_line": "L40"
+ },
+ {
+  "id": "E050-C3",
+  "episode": 50,
+  "status": "duplicate",
+  "reasons": [
+   "overlaps higher-ranked E050-C1"
+  ],
+  "repairs": [],
+  "angle": "secret or hidden identity",
+  "segments": [
+   {
+    "episode": 50,
+    "start_line": "L17",
+    "end_line": "L21",
+    "start": 31.0,
+    "end": 42.5
+   },
+   {
+    "episode": 50,
+    "start_line": "L33",
+    "end_line": "L40",
+    "start": 70.5,
+    "end": 80.0
+   }
+  ],
+  "duration": 21.0,
+  "hook_line": "L17",
+  "cliffhanger_line": "L40",
+  "score_hook": 6.0,
+  "score_cliffhanger": 9.0,
+  "score_standalone": 7.0,
+  "final_score": 7.3
+ }
+]

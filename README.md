@@ -103,6 +103,19 @@ Sources in the sidebar:
 
 **Confidential data never goes online.** `data/` (screenplays) and `outputs/` (results that quote the dialogue) are git-ignored, so the hosted app only contains code and the original sample. Reviewers who have the show load it themselves through the upload options.
 
+## Showing results on the confidential show, safely
+
+**Public, text-free results** (no password):
+```bash
+python export_public.py --results outputs/groq_full    # -> public/groq_full
+```
+Keeps episodes, timestamps, lengths, angles, scores, ranks, rejections and the posting plan;
+removes every hook, cliffhanger, explanation, the model's raw answers and the show's title.
+The dashboard shows it first, as **Kuku show: results**.
+
+**One-click full view for reviewers:** after locking (below), share
+`https://<your-app>.streamlit.app/?key=<password>` privately. It unlocks the full text automatically.
+
 ## Showing the confidential show online, safely (password-locked)
 
 The screenplays and the results that quote them must not be published. To show them on the

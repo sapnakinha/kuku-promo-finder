@@ -1,6 +1,6 @@
 # Ranked promos - The Cleaner Owns the Building
 
-Model: `groq / openai/gpt-oss-120b` - run 2026-11-08 17:03
+Model: `groq / openai/gpt-oss-120b` - run 2026-11-08 18:05
 
 15 candidates proposed, 5 rejected by rule checks, 5 duplicates removed, **5 final promos**.
 

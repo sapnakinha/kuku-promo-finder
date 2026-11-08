@@ -552,10 +552,11 @@ def main():
             reasons[key] = reasons.get(key, 0) + 1
 
     summary = {
-        "show": show_name, "input": str(input_path),
+        "show": show_name, "input": Path(input_path).as_posix(),
         "provider": llm.provider, "model": " -> ".join(llm.models_used) or llm.model,
         "run_started": f"{started:%Y-%m-%d %H:%M}", "episodes": len(episodes),
         "episode_numbers": [e["number"] for e in episodes],
+        "episode_durations": {e["number"]: round(e["duration"], 1) for e in episodes},
         "candidates_proposed": len(all_promos),
         "rejected": sum(p["status"] == "rejected" for p in all_promos),
         "rejection_reasons": reasons,

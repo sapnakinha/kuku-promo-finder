@@ -30,6 +30,10 @@ from parse_script import fmt_time, load_show
 OUTPUTS = Path("outputs")          # your own runs (git-ignored, only on your computer)
 SAMPLES = Path("samples")          # an original sample show, safe to publish
 PRIVATE = Path("private")          # encrypted (.locked) shows - need a password to open
+PUBLIC = Path("public")            # text-free copies of real runs (export_public.py)
+PUBLIC_SRC = "Kuku show: results"
+LOCKED_SRC = "Kuku show: full text (password)"
+HIDDEN = "Dialogue hidden to protect Kuku's content. Unlock with the password to read it."
 DATA = Path("data")
 
 st.set_page_config(page_title="Promo Finder", layout="wide")
@@ -125,6 +129,10 @@ st.markdown("""
   .day {font-weight: 600; color: #1E2A36; margin: 22px 0 8px 0;}
   .day span {font-weight: 400; color: #6E7781;}
   .line {font-size: 0.88rem; margin: 2px 0;}
+  .hidden-note {font-size: 0.86rem; color: #6E7781; background: #F7F6F3; border: 1px dashed #DDD9D0;
+                border-radius: 8px; padding: 10px 14px; margin: 6px 0 10px 0;}
+  .banner {font-size: 0.88rem; color: #4A5560; background: #FFFFFF; border: 1px solid #E6E3DC;
+           border-radius: 10px; padding: 12px 16px; margin: -8px 0 26px 0; line-height: 1.5;}
   .line .t {font-family: ui-monospace, Menlo, Consolas, monospace; color: #8A929A; margin-right: 8px;}
   .spot-meta {margin-top: auto;}
   .spot-card {display: flex; flex-direction: column; min-width: 0;}
@@ -272,8 +280,11 @@ def promo_card(p, script, key):
 
     html = f'<div class="row">{" ".join(tags)}{times}</div>'
     html += timeline_html(p, accent)
-    html += (f'<div class="hc"><div><div class="label">Hook</div><div class="val">{clean(p.get("hook")) or "—"}</div></div>'
-             f'<div><div class="label">Cliffhanger</div><div class="val">{clean(p.get("cliffhanger")) or "—"}</div></div></div>')
+    if REDACTED:
+        html += f'<div class="hidden-note">{HIDDEN}</div>'
+    else:
+        html += (f'<div class="hc"><div><div class="label">Hook</div><div class="val">{clean(p.get("hook")) or "—"}</div></div>'
+                 f'<div><div class="label">Cliffhanger</div><div class="val">{clean(p.get("cliffhanger")) or "—"}</div></div></div>')
     if p.get("why"):
         html += f'<div class="why">{p["why"]}</div>'
     if p["status"] in ("rejected", "duplicate"):
@@ -303,6 +314,20 @@ def promo_card(p, script, key):
 
 
 # ---------------------------------------------------------------- page
+def unlock_show(locked, password):
+    """Decrypt a .locked file into this visitor's private temp folder. True on success."""
+    from lock_data import unlock
+    try:
+        data = unlock(locked.read_bytes(), password)
+    except ValueError:
+        return False
+    target = session_dir() / "unlocked" / locked.stem
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        z.extractall(target)
+    st.session_state[f"unlocked::{locked.name}"] = str(target)
+    return True
+
+
 def progress_value(lines, total):
     """How far along the run is, from the last '... episode i/N' line."""
     for line in reversed(lines):
@@ -401,24 +426,34 @@ def run_online(container):
 with st.sidebar:
     st.markdown("### Results")
     sources = []
-    if find_runs(SAMPLES):
-        sources.append("Sample show")
+    if find_runs(PUBLIC):
+        sources.append(PUBLIC_SRC)
     locked_files = sorted(PRIVATE.glob("*.locked")) if PRIVATE.exists() else []
     if locked_files:
-        sources.append("Kuku show (password)")
+        sources.append(LOCKED_SRC)
+    if find_runs(SAMPLES):
+        sources.append("Sample show")
     if find_runs(OUTPUTS):
         sources.append("My runs")
     sources += ["Upload results", "Run on new screenplays"]
+    # One-click review link: ...streamlit.app/?key=<password> unlocks the full show
+    link_key = st.query_params.get("key")
+    if link_key and locked_files and "link_tried" not in st.session_state:
+        st.session_state.link_tried = True
+        if any(unlock_show(f, link_key) for f in locked_files):
+            st.session_state.source_pick = LOCKED_SRC
+    pick = st.session_state.get("source_pick")
     source = st.radio("Source", sources, label_visibility="collapsed",
+                      index=sources.index(pick) if pick in sources else 0,
                       help="Sample show: an original demo script. Upload results: a zipped run folder.")
 
     folder, script_folders = None, []
-    if source in ("Sample show", "My runs"):
-        runs = find_runs(SAMPLES if source == "Sample show" else OUTPUTS)
+    if source in (PUBLIC_SRC, "Sample show", "My runs"):
+        runs = find_runs({PUBLIC_SRC: PUBLIC, "Sample show": SAMPLES}.get(source, OUTPUTS))
         folder = st.selectbox("Run", runs, format_func=lambda r: r.name)
         if "mock" in folder.name:
             st.warning("This is a mock run with fake picks, used only to test the code.")
-    elif source == "Kuku show (password)":
+    elif source == LOCKED_SRC:
         locked = st.selectbox("Show", locked_files, format_func=lambda f: f"Locked: {f.stem}")
         opened = st.session_state.get(f"unlocked::{locked.name}")
         if not opened:
@@ -427,16 +462,10 @@ with st.sidebar:
                                          help="The confidential show is encrypted; the password "
                                               "was shared with the reviewers.")
                 if st.form_submit_button("Unlock"):
-                    from lock_data import unlock
-                    try:
-                        data = unlock(locked.read_bytes(), password)
-                        target = session_dir() / "unlocked" / locked.stem
-                        with zipfile.ZipFile(io.BytesIO(data)) as z:
-                            z.extractall(target)
-                        st.session_state[f"unlocked::{locked.name}"] = str(target)
+                    if unlock_show(locked, password):
                         st.rerun()
-                    except ValueError as error:
-                        st.error(str(error))
+                    else:
+                        st.error("Wrong password.")
         else:
             found = find_runs(Path(opened) / "results")
             if found:
@@ -466,7 +495,7 @@ with st.sidebar:
 if source == "Run on new screenplays" and folder is None:
     run_online(st.container())
     st.stop()
-if folder is None and source == "Kuku show (password)":
+if folder is None and source == LOCKED_SRC:
     st.markdown('<div class="eyebrow">Promo finder</div><div class="show-title">Confidential show</div>'
                 '<div class="meta">This show belongs to Kuku and is stored encrypted. Enter the password '
                 'in the sidebar to open it.</div>', unsafe_allow_html=True)
@@ -479,10 +508,14 @@ if folder is None:
 
 run = folder.name
 promos, summary, plan = load_run(str(folder), run_version(folder))
+REDACTED = bool(summary.get("redacted"))
 input_path = summary.get("input", "")
 candidates = list(script_folders)
 if input_path:
-    candidates.append(Path(input_path))
+    # runs made on Windows store paths with backslashes; the server is Linux
+    candidates.append(Path(input_path.replace("\\", "/")))
+if source == "Sample show":
+    candidates.append(SAMPLES / "screenplays")
 if summary.get("show"):
     candidates.append(DATA / summary["show"])
 script = load_script(tuple(str(f) for f in candidates))
@@ -510,13 +543,19 @@ st.markdown(
     f'<div class="stat"><div class="n">{len(kept)}</div><div class="l">Final promos</div></div>'
     f'</div>', unsafe_allow_html=True)
 
+if REDACTED:
+    st.markdown('<div class="banner">These are my real results on Kuku\'s show: every promo\'s episode, '
+                'timestamps, length, angle, scores and rank. The dialogue is hidden because the screenplays are '
+                'confidential. You can check any timestamp against your copy, or open '
+                f'<b>{LOCKED_SRC}</b> in the sidebar to read the full text.</div>', unsafe_allow_html=True)
+
 if kept:
     cards = []
     for p in kept[:3]:
         first = " first" if p["rank"] == 1 else ""
         eps = "+".join(str(e) for e in sorted({s_["episode"] for s_ in p["segments"]}))
         cards.append(f'<div class="spot-card{first}"><div class="spot-rank">{p["rank"]}</div>'
-                     f'<div class="spot-hook">{clean(p.get("hook"))}</div>'
+                     f'<div class="spot-hook">{segments_text(p) if REDACTED else clean(p.get("hook"))}</div>'
                      f'<div class="spot-meta">Ep {eps} · {p["duration"]:.0f} s · {p.get("angle", "")}'
                      f' · score {p["final_score"]}</div></div>')
     st.markdown('<div class="spot-head">Post these first</div><div class="spot">' + "".join(cards) + '</div>',
@@ -574,7 +613,18 @@ with tab_plan:
             body = "".join(
                 f'<tr><td class="c-rank">#{r["overall_rank"]}</td>'
                 f'<td class="c-clip">{r["segments"].replace(" + ", "<br>")}</td>'
-                f'<td>{clean(r["hook"])}</td><td>{clean(r["cliffhanger"])}</td></tr>' for r in rows)
+                f'<td>{clean(r.get("hook")) or "—"}</td><td>{clean(r.get("cliffhanger")) or "—"}</td></tr>'
+                for r in rows)
+            if REDACTED:
+                body = "".join(
+                    f'<tr><td class="c-rank">#{r["overall_rank"]}</td>'
+                    f'<td class="c-clip">{r["segments"].replace(" + ", "<br>")}</td>'
+                    f'<td>{r.get("score", "")}</td><td>{r.get("why_this_day", "")}</td></tr>' for r in rows)
+                st.markdown('<table class="plan"><colgroup><col class="c-rank"><col class="c-clip"><col><col>'
+                            '</colgroup><thead><tr><th class="c-rank">Rank</th><th class="c-clip">Clip</th>'
+                            f'<th>Score</th><th>Why this day</th></tr></thead><tbody>{body}</tbody></table>',
+                            unsafe_allow_html=True)
+                continue
             st.markdown('<table class="plan"><colgroup><col class="c-rank"><col class="c-clip"><col><col>'
                         '</colgroup><thead><tr><th class="c-rank">Rank</th><th class="c-clip">Clip</th>'
                         f'<th>Hook</th><th>Cliffhanger</th></tr></thead><tbody>{body}</tbody></table>',
@@ -590,10 +640,11 @@ with tab_quality:
     if rejected:
         with st.expander(f"See all {len(rejected)} rejected ideas"):
             for p in rejected:
-                st.markdown(f"Ep {p['episode']} · {'; '.join(p['reasons'])} · "
-                            f"_{clean(p.get('hook'))[:80]}_")
+                st.markdown(f"Ep {p['episode']} · {'; '.join(p['reasons'])}"
+                            + ("" if REDACTED else f" · _{clean(p.get('hook'))[:80]}_"))
 
 st.markdown(
-    f'<div class="site-footer"><span>Promo finder · built by {config.AUTHOR}</span>'
-    f'<a href="{config.PROJECT_URL}" target="_blank">Code and run steps on GitHub</a></div>',
+    f'<div class="site-footer"><span>Promo finder · built by {getattr(config, "AUTHOR", "Sapna")}</span>'
+    f'<a href="{getattr(config, "PROJECT_URL", "https://github.com/sapnakinha/kuku-promo-finder")}" '
+    f'target="_blank">Code and run steps on GitHub</a></div>',
     unsafe_allow_html=True)

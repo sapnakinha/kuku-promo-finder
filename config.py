@@ -124,3 +124,9 @@ PROMOS_PER_DAY = 2             # my decision: 2 clips per angle per day = more c
 # tokens - CHECK the provider's current price page and update before quoting.
 PRICE_PER_M_INPUT_TOKENS = 0.30
 PRICE_PER_M_OUTPUT_TOKENS = 2.50
+
+# ---------------------------------------------------------------------------
+# 5. Shown in the dashboard footer
+# ---------------------------------------------------------------------------
+AUTHOR = "Sapna"
+PROJECT_URL = "https://github.com/sapnakinha/kuku-promo-finder"
