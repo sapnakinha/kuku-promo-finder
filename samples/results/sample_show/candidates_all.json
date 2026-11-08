@@ -1,0 +1,635 @@
+[
+  {
+    "id": "E001-C1",
+    "episode": 1,
+    "status": "valid",
+    "reasons": [],
+    "repairs": [],
+    "hook": "Celeste screams that her bracelet is missing",
+    "cliffhanger": "Mara flashes an old brass key, hinting at a hidden secret",
+    "why": "The sudden accusation grabs attention, then the mysterious key leaves viewers desperate to know its meaning",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L2",
+          "end_line": "L6"
+        },
+        {
+          "start_line": "L15",
+          "end_line": "L18"
+        }
+      ],
+      "hook_line": "L3",
+      "hook": "Celeste screams that her bracelet is missing",
+      "cliffhanger_line": "L18",
+      "cliffhanger": "Mara flashes an old brass key, hinting at a hidden secret",
+      "why": "The sudden accusation grabs attention, then the mysterious key leaves viewers desperate to know its meaning",
+      "angle": "betrayal"
+    },
+    "angle": "betrayal",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L2",
+        "end_line": "L6",
+        "start": 3.5,
+        "end": 16.3
+      },
+      {
+        "episode": 1,
+        "start_line": "L15",
+        "end_line": "L18",
+        "start": 40.9,
+        "end": 52.3
+      }
+    ],
+    "duration": 24.2,
+    "hook_line": "L3",
+    "cliffhanger_line": "L18",
+    "score_hook": 8.0,
+    "score_cliffhanger": 7.0,
+    "score_standalone": 5.0,
+    "critic_confusing": "the importance of the bracelet and the brass key aren't explained",
+    "critic_comment": "Visually striking start and a tantalizing key reveal, but the stakes and backstory remain vague for newcomers.",
+    "final_score": 7.9
+  },
+  {
+    "id": "E001-C2",
+    "episode": 1,
+    "status": "rejected",
+    "reasons": [
+      "too short (17.8s < 20s)"
+    ],
+    "repairs": [],
+    "hook": "Celeste points, accusing the cleaner",
+    "cliffhanger": "A guard pulls out the sparkling bracelet from Mara’s bucket",
+    "why": "The public humiliation spikes curiosity, and the reveal of the bracelet stops the clip on a tense moment",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L5",
+          "end_line": "L10"
+        }
+      ],
+      "hook_line": "L5",
+      "hook": "Celeste points, accusing the cleaner",
+      "cliffhanger_line": "L10",
+      "cliffhanger": "A guard pulls out the sparkling bracelet from Mara’s bucket",
+      "why": "The public humiliation spikes curiosity, and the reveal of the bracelet stops the clip on a tense moment",
+      "angle": "humiliation"
+    },
+    "angle": "humiliation",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L5",
+        "end_line": "L10",
+        "start": 11.1,
+        "end": 28.9
+      }
+    ],
+    "duration": 17.8,
+    "hook_line": "L5",
+    "cliffhanger_line": "L10"
+  },
+  {
+    "id": "E001-C3",
+    "episode": 1,
+    "status": "rejected",
+    "reasons": [
+      "too short (8.0s < 20s)"
+    ],
+    "repairs": [],
+    "hook": "Mara warns, \"You have no idea who you just accused\"",
+    "cliffhanger": "Celeste laughs, dismissing the threat",
+    "why": "A direct threat creates immediate danger, and the laugh leaves the outcome uncertain",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L15",
+          "end_line": "L17"
+        }
+      ],
+      "hook_line": "L16",
+      "hook": "Mara warns, \"You have no idea who you just accused\"",
+      "cliffhanger_line": "L17",
+      "cliffhanger": "Celeste laughs, dismissing the threat",
+      "why": "A direct threat creates immediate danger, and the laugh leaves the outcome uncertain",
+      "angle": "danger or threat"
+    },
+    "angle": "danger or threat",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L15",
+        "end_line": "L17",
+        "start": 40.9,
+        "end": 48.9
+      }
+    ],
+    "duration": 8.0,
+    "hook_line": "L16",
+    "cliffhanger_line": "L17"
+  },
+  {
+    "id": "E001-C4",
+    "episode": 1,
+    "status": "rejected",
+    "reasons": [
+      "too short (9.0s < 20s)"
+    ],
+    "repairs": [],
+    "hook": "Mara pulls an old brass key from under her uniform",
+    "cliffhanger": "Daniel whispers, \"That key… where did you get my grandfather's key?\"",
+    "why": "The key is a visual hook, and Daniel’s question teases a family secret that viewers must discover",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L18",
+          "end_line": "L20"
+        }
+      ],
+      "hook_line": "L18",
+      "hook": "Mara pulls an old brass key from under her uniform",
+      "cliffhanger_line": "L20",
+      "cliffhanger": "Daniel whispers, \"That key… where did you get my grandfather's key?\"",
+      "why": "The key is a visual hook, and Daniel’s question teases a family secret that viewers must discover",
+      "angle": "secret or hidden identity"
+    },
+    "angle": "secret or hidden identity",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L18",
+        "end_line": "L20",
+        "start": 48.9,
+        "end": 57.9
+      }
+    ],
+    "duration": 9.0,
+    "hook_line": "L18",
+    "cliffhanger_line": "L20"
+  },
+  {
+    "id": "E001-R1-1",
+    "episode": 1,
+    "status": "valid",
+    "reasons": [],
+    "repairs": [],
+    "hook": "Celeste points accusing Mara, a shocking accusation that grabs attention instantly",
+    "cliffhanger": "Mara pleads desperately, “Mr. Vance, someone put it there. Please believe me.” leaving the accusation unresolved",
+    "why": "The hook is a dramatic accusation that stops scrolling, and the cliffhanger leaves viewers wondering who really stole the bracelet",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L4",
+          "end_line": "L13"
+        }
+      ],
+      "hook_line": "L5",
+      "hook": "Celeste points accusing Mara, a shocking accusation that grabs attention instantly",
+      "cliffhanger_line": "L13",
+      "cliffhanger": "Mara pleads desperately, “Mr. Vance, someone put it there. Please believe me.” leaving the accusation unresolved",
+      "why": "The hook is a dramatic accusation that stops scrolling, and the cliffhanger leaves viewers wondering who really stole the bracelet",
+      "angle": "humiliation"
+    },
+    "angle": "humiliation",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L4",
+        "end_line": "L13",
+        "start": 9.1,
+        "end": 37.3
+      }
+    ],
+    "duration": 28.2,
+    "hook_line": "L5",
+    "cliffhanger_line": "L13",
+    "self_corrected": true,
+    "score_hook": 6.0,
+    "score_cliffhanger": 5.0,
+    "score_standalone": 5.0,
+    "critic_confusing": "Why does a cleaner have a sparkling bracelet?",
+    "critic_comment": "Solid tension but lacks a clear hook and payoff.",
+    "final_score": 6.4
+  },
+  {
+    "id": "E001-R1-2",
+    "episode": 1,
+    "status": "valid",
+    "reasons": [],
+    "repairs": [],
+    "hook": "Mara’s desperate plea, “Mr. Vance, someone put it there,” creates immediate tension",
+    "cliffhanger": "Daniel whispers, “That key… where did you get my grandfather’s key?” hinting at a hidden secret",
+    "why": "A frantic appeal followed by a mysterious key tease a deeper conspiracy, compelling viewers to click for answers",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L13",
+          "end_line": "L20"
+        }
+      ],
+      "hook_line": "L13",
+      "hook": "Mara’s desperate plea, “Mr. Vance, someone put it there,” creates immediate tension",
+      "cliffhanger_line": "L20",
+      "cliffhanger": "Daniel whispers, “That key… where did you get my grandfather’s key?” hinting at a hidden secret",
+      "why": "A frantic appeal followed by a mysterious key tease a deeper conspiracy, compelling viewers to click for answers",
+      "angle": "secret"
+    },
+    "angle": "secret or hidden identity",
+    "segments": [
+      {
+        "episode": 1,
+        "start_line": "L13",
+        "end_line": "L20",
+        "start": 34.1,
+        "end": 57.9
+      }
+    ],
+    "duration": 23.8,
+    "hook_line": "L13",
+    "cliffhanger_line": "L20",
+    "self_corrected": true,
+    "score_hook": 4.0,
+    "score_cliffhanger": 8.0,
+    "score_standalone": 6.0,
+    "critic_confusing": "Who is the grandfather and why does his key matter?",
+    "critic_comment": "Better mystery ending, but opening is weak.",
+    "final_score": 6.9
+  },
+  {
+    "id": "E001-R1-3",
+    "episode": 1,
+    "status": "rejected",
+    "reasons": [
+      "hook line (missing) not in script"
+    ],
+    "repairs": [],
+    "hook": "",
+    "cliffhanger": "",
+    "why": "",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L8",
+          "end_line": "L14"
+        }
+      ]
+    },
+    "angle": "other",
+    "self_corrected": true
+  },
+  {
+    "id": "E002-C1",
+    "episode": 2,
+    "status": "duplicate",
+    "reasons": [
+      "overlaps higher-ranked E002-C4"
+    ],
+    "repairs": [],
+    "hook": "Celeste sneers and orders guards to take Mara out",
+    "cliffhanger": "Celeste says 'Not so fast.' leaving tension",
+    "why": "Shows a villain's threat early, grabbing attention and promising conflict",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L5",
+          "end_line": "L12"
+        }
+      ],
+      "hook_line": "L5",
+      "hook": "Celeste sneers and orders guards to take Mara out",
+      "cliffhanger_line": "L12",
+      "cliffhanger": "Celeste says 'Not so fast.' leaving tension",
+      "why": "Shows a villain's threat early, grabbing attention and promising conflict",
+      "angle": "danger or threat"
+    },
+    "angle": "danger or threat",
+    "segments": [
+      {
+        "episode": 2,
+        "start_line": "L5",
+        "end_line": "L12",
+        "start": 13.8,
+        "end": 37.0
+      }
+    ],
+    "duration": 23.2,
+    "hook_line": "L5",
+    "cliffhanger_line": "L12",
+    "score_hook": 8.0,
+    "score_cliffhanger": 6.0,
+    "score_standalone": 5.0,
+    "critic_confusing": "Mara is mentioned without introduction; the key's importance is vague",
+    "critic_comment": "Strong opening but leaves viewers guessing about characters and stakes",
+    "final_score": 7.05
+  },
+  {
+    "id": "E002-C2",
+    "episode": 2,
+    "status": "duplicate",
+    "reasons": [
+      "overlaps higher-ranked E002-C4"
+    ],
+    "repairs": [],
+    "hook": "Mr. Okafor reads the shocking 51% ownership line",
+    "cliffhanger": "Mara points out the dead founder, raising doubt",
+    "why": "Reveals a hidden inheritance that could change everything, pulling viewers in",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L9",
+          "end_line": "L15"
+        }
+      ],
+      "hook_line": "L9",
+      "hook": "Mr. Okafor reads the shocking 51% ownership line",
+      "cliffhanger_line": "L15",
+      "cliffhanger": "Mara points out the dead founder, raising doubt",
+      "why": "Reveals a hidden inheritance that could change everything, pulling viewers in",
+      "angle": "family conflict"
+    },
+    "angle": "family conflict",
+    "segments": [
+      {
+        "episode": 2,
+        "start_line": "L9",
+        "end_line": "L15",
+        "start": 26.6,
+        "end": 47.4
+      }
+    ],
+    "duration": 20.8,
+    "hook_line": "L9",
+    "cliffhanger_line": "L15",
+    "score_hook": 5.0,
+    "score_cliffhanger": 5.0,
+    "score_standalone": 6.0,
+    "critic_confusing": "The key and ownership dispute are not fully explained",
+    "critic_comment": "Decent tension but the hook is weak and the payoff feels flat",
+    "final_score": 5.75
+  },
+  {
+    "id": "E002-C3",
+    "episode": 2,
+    "status": "duplicate",
+    "reasons": [
+      "overlaps higher-ranked E002-C4"
+    ],
+    "repairs": [],
+    "hook": "Celeste slaps the forged will onto the table",
+    "cliffhanger": "She hisses a deadline threat, leaving the outcome unknown",
+    "why": "Combines a visual power move with a looming deadline, creating suspense",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L13",
+          "end_line": "L18"
+        }
+      ],
+      "hook_line": "L13",
+      "hook": "Celeste slaps the forged will onto the table",
+      "cliffhanger_line": "L18",
+      "cliffhanger": "She hisses a deadline threat, leaving the outcome unknown",
+      "why": "Combines a visual power move with a looming deadline, creating suspense",
+      "angle": "betrayal"
+    },
+    "angle": "betrayal",
+    "segments": [
+      {
+        "episode": 2,
+        "start_line": "L13",
+        "end_line": "L18",
+        "start": 37.0,
+        "end": 58.0
+      }
+    ],
+    "duration": 21.0,
+    "hook_line": "L13",
+    "cliffhanger_line": "L18",
+    "score_hook": 6.0,
+    "score_cliffhanger": 8.0,
+    "score_standalone": 6.0,
+    "critic_confusing": "The connection to the key and why the will matters is unclear",
+    "critic_comment": "Good mid‑clip reveal and a ticking‑clock cliffhanger, though context is thin",
+    "final_score": 7.2
+  },
+  {
+    "id": "E002-C4",
+    "episode": 2,
+    "status": "valid",
+    "reasons": [],
+    "repairs": [],
+    "hook": "Close on the brass key swinging from Mara's fingers",
+    "cliffhanger": "Clock ticks as the scene cuts to black, leaving the showdown pending",
+    "why": "Offers the full mystery of the key and the battle for the building in one bite",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L1",
+          "end_line": "L19"
+        }
+      ],
+      "hook_line": "L1",
+      "hook": "Close on the brass key swinging from Mara's fingers",
+      "cliffhanger_line": "L19",
+      "cliffhanger": "Clock ticks as the scene cuts to black, leaving the showdown pending",
+      "why": "Offers the full mystery of the key and the battle for the building in one bite",
+      "angle": "mystery"
+    },
+    "angle": "mystery",
+    "segments": [
+      {
+        "episode": 2,
+        "start_line": "L1",
+        "end_line": "L19",
+        "start": 0.0,
+        "end": 60.0
+      }
+    ],
+    "duration": 60.0,
+    "hook_line": "L1",
+    "cliffhanger_line": "L19",
+    "score_hook": 8.0,
+    "score_cliffhanger": 9.0,
+    "score_standalone": 7.0,
+    "critic_confusing": "None",
+    "critic_comment": "Comprehensive tease with visual and narrative hooks that compel scrolling viewers",
+    "final_score": 8.6
+  },
+  {
+    "id": "E003-C1",
+    "episode": 3,
+    "status": "valid",
+    "reasons": [],
+    "repairs": [],
+    "hook": "Mara urgently demands the security footage",
+    "cliffhanger": "Mara gives Daniel one minute to choose her or the truth",
+    "why": "The urgent command, shocking family betrayal and a ticking‑clock decision hook new viewers fast",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L1",
+          "end_line": "L16"
+        }
+      ],
+      "hook_line": "L2",
+      "hook": "Mara urgently demands the security footage",
+      "cliffhanger_line": "L16",
+      "cliffhanger": "Mara gives Daniel one minute to choose her or the truth",
+      "why": "The urgent command, shocking family betrayal and a ticking‑clock decision hook new viewers fast",
+      "angle": "betrayal"
+    },
+    "angle": "betrayal",
+    "segments": [
+      {
+        "episode": 3,
+        "start_line": "L1",
+        "end_line": "L16",
+        "start": 0.0,
+        "end": 46.0
+      }
+    ],
+    "duration": 46.0,
+    "hook_line": "L2",
+    "cliffhanger_line": "L16",
+    "score_hook": 5.0,
+    "score_cliffhanger": 9.0,
+    "score_standalone": 6.0,
+    "critic_confusing": "bracelet vs ring and family backstory unclear",
+    "critic_comment": "Strong climax but relies on prior context",
+    "final_score": 6.65
+  },
+  {
+    "id": "E003-C2",
+    "episode": 3,
+    "status": "duplicate",
+    "reasons": [
+      "overlaps higher-ranked E003-C1"
+    ],
+    "repairs": [],
+    "hook": "Daniel horrified discovers the ring belongs to his mother",
+    "cliffhanger": "Eleanor calmly declares she did what the family needed",
+    "why": "A shocking secret about a family heirloom flips to a chilling confession, leaving the outcome unknown",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L7",
+          "end_line": "L14"
+        }
+      ],
+      "hook_line": "L8",
+      "hook": "Daniel horrified discovers the ring belongs to his mother",
+      "cliffhanger_line": "L14",
+      "cliffhanger": "Eleanor calmly declares she did what the family needed",
+      "why": "A shocking secret about a family heirloom flips to a chilling confession, leaving the outcome unknown",
+      "angle": "betrayal"
+    },
+    "angle": "betrayal",
+    "segments": [
+      {
+        "episode": 3,
+        "start_line": "L7",
+        "end_line": "L14",
+        "start": 16.6,
+        "end": 40.8
+      }
+    ],
+    "duration": 24.2,
+    "hook_line": "L8",
+    "cliffhanger_line": "L14",
+    "score_hook": 7.0,
+    "score_cliffhanger": 5.0,
+    "score_standalone": 4.0,
+    "critic_confusing": "introduces characters and motives without explanation",
+    "critic_comment": "Hooky start but feels like a snippet",
+    "final_score": 5.55
+  },
+  {
+    "id": "E003-C3",
+    "episode": 3,
+    "status": "duplicate",
+    "reasons": [
+      "overlaps higher-ranked E003-C1"
+    ],
+    "repairs": [],
+    "hook": "Eleanor bursts into the room with a menacing presence",
+    "cliffhanger": "The clock strikes midnight and the screen cuts to black",
+    "why": "The sudden door slam and midnight deadline create immediate tension that forces viewers to wonder what happens next",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L10",
+          "end_line": "L18"
+        }
+      ],
+      "hook_line": "L11",
+      "hook": "Eleanor bursts into the room with a menacing presence",
+      "cliffhanger_line": "L18",
+      "cliffhanger": "The clock strikes midnight and the screen cuts to black",
+      "why": "The sudden door slam and midnight deadline create immediate tension that forces viewers to wonder what happens next",
+      "angle": "danger or threat"
+    },
+    "angle": "danger or threat",
+    "segments": [
+      {
+        "episode": 3,
+        "start_line": "L10",
+        "end_line": "L18",
+        "start": 25.2,
+        "end": 51.4
+      }
+    ],
+    "duration": 26.2,
+    "hook_line": "L11",
+    "cliffhanger_line": "L18",
+    "score_hook": 6.0,
+    "score_cliffhanger": 8.0,
+    "score_standalone": 5.0,
+    "critic_confusing": "missing earlier setup and unclear what the board is",
+    "critic_comment": "Good tension but needs more context",
+    "final_score": 6.45
+  },
+  {
+    "id": "E003-C4",
+    "episode": 3,
+    "status": "rejected",
+    "reasons": [
+      "too short (11.4s < 20s)"
+    ],
+    "repairs": [
+      "trimmed start so the clip opens on the hook"
+    ],
+    "hook": "Daniel accuses his mother of planting the bracelet",
+    "cliffhanger": "Mara forces Daniel to choose between her and the truth with one minute left",
+    "why": "A raw accusation followed by an impossible choice highlights family conflict and keeps the audience on edge",
+    "model_answer": {
+      "segments": [
+        {
+          "start_line": "L12",
+          "end_line": "L16"
+        }
+      ],
+      "hook_line": "L13",
+      "hook": "Daniel accuses his mother of planting the bracelet",
+      "cliffhanger_line": "L16",
+      "cliffhanger": "Mara forces Daniel to choose between her and the truth with one minute left",
+      "why": "A raw accusation followed by an impossible choice highlights family conflict and keeps the audience on edge",
+      "angle": "family conflict"
+    },
+    "angle": "family conflict",
+    "segments": [
+      {
+        "episode": 3,
+        "start_line": "L13",
+        "end_line": "L16",
+        "start": 34.6,
+        "end": 46.0
+      }
+    ],
+    "duration": 11.4,
+    "hook_line": "L13",
+    "cliffhanger_line": "L16"
+  }
+]

@@ -1,0 +1,29 @@
+# ---- NEVER upload Kuku's confidential screenplays ----
+data/
+*.zip
+*.txt
+!requirements.txt
+# ...except the ORIGINAL sample show written for the public demo (not Kuku's content)
+!samples/
+!samples/**
+
+# ---- Hand-picked promos describe the confidential show's plot: keep local ----
+gold/
+# your solution doc / notes describe the show too - never upload them
+*.pdf
+*.docx
+*.doc
+
+# ---- NEVER upload your secret API keys ----
+.env
+
+# ---- Run outputs: shared separately via a Google Drive link ----
+outputs/
+
+# ---- Python clutter ----
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store

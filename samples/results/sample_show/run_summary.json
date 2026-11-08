@@ -1,0 +1,48 @@
+{
+  "show": "The Cleaner Owns the Building",
+  "input": "samples\\screenplays",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "run_started": "2026-11-08 17:03",
+  "episodes": 3,
+  "episode_numbers": [
+    1,
+    2,
+    3
+  ],
+  "candidates_proposed": 15,
+  "rejected": 5,
+  "rejection_reasons": {
+    "too short": 4,
+    "hook line": 1
+  },
+  "auto_repaired": 0,
+  "duplicates_removed": 5,
+  "final_promos": 5,
+  "self_corrected_promos": 2,
+  "final_two_episode_promos": 0,
+  "api_calls": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "minutes": 0.1,
+  "settings": {
+    "min_seconds": 20,
+    "max_seconds": 60,
+    "hook_window_seconds": 3.0,
+    "early_episode_bonus": 1.0,
+    "angles": [
+      "betrayal",
+      "mystery",
+      "humiliation",
+      "revenge",
+      "romance",
+      "secret or hidden identity",
+      "danger or threat",
+      "family conflict"
+    ],
+    "posting_days": 7,
+    "promos_per_day": 2,
+    "bridges": false
+  },
+  "estimated_cost_usd_if_paid": 0.0
+}
