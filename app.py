@@ -37,7 +37,8 @@ st.set_page_config(page_title="Promo Finder", layout="wide")
 st.markdown("""
 <style>
   #MainMenu, footer, header [data-testid="stToolbar"], .stDeployButton {visibility: hidden;}
-  .block-container {padding-top: 2.2rem; max-width: 1080px;}
+  .block-container {padding-top: 4.5rem; max-width: 1080px;}
+  header[data-testid="stHeader"] {background: transparent;}
   [data-testid="stSidebar"] {background: #EFEDE8; border-right: 1px solid #E2DFD8;}
 
   .eyebrow {font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase;
