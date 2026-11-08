@@ -71,7 +71,13 @@ class LLM:
         key_name = settings.get("api_key_env", "LLM_API_KEY")
         api_key = os.getenv(key_name, "")
         if not api_key and sys.stdin.isatty():
-            api_key = getpass.getpass(f"API key for {self.provider} (input hidden, not saved): ").strip()
+            api_key = getpass.getpass(f"API key for {self.provider} (input hidden, not saved; "
+                                      f"on Windows paste with right-click): ")
+        # Pasting into a hidden prompt can add invisible characters (e.g. Ctrl+V on Windows)
+        api_key = "".join(ch for ch in api_key if ch.isprintable()).strip()
+        if api_key and len(api_key) < 20:
+            raise SystemExit(f"That key looks too short ({len(api_key)} characters) - the paste probably "
+                             f"did not work. Add  {key_name}=your_key  to the .env file instead.")
         if not api_key:
             raise SystemExit(f"No API key found. Add  {key_name}=your_key  to the .env file "
                              f"in the project folder, or run again and paste it when asked.")
@@ -97,6 +103,9 @@ class LLM:
             return json.loads(raw), raw
 
         attempt = 0
+        # JSON mode is the default. If the API's strict check rejects ONE answer, only
+        # that call is retried without it; the next call starts in JSON mode again.
+        use_json = self.json_mode
         while True:
             # Stay under the free tier's requests-per-minute limit
             wait = config.SECONDS_BETWEEN_CALLS - (time.time() - self._last_call)
@@ -105,7 +114,7 @@ class LLM:
             attempt += 1
             try:
                 self._last_call = time.time()
-                extra = {"response_format": {"type": "json_object"}} if self.json_mode else {}
+                extra = {"response_format": {"type": "json_object"}} if use_json else {}
                 response = self.client.chat.completions.create(
                     model=self.model, temperature=config.TEMPERATURE,
                     messages=[{"role": "system", "content": system_prompt},
@@ -114,25 +123,30 @@ class LLM:
                 if response.usage:
                     self.tokens_in += response.usage.prompt_tokens or 0
                     self.tokens_out += response.usage.completion_tokens or 0
-                raw = response.choices[0].message.content or ""
+                raw = (response.choices[0].message.content or "").strip()
+                if not raw:
+                    raise EmptyAnswer("the model returned an empty answer")
                 return extract_json(raw), raw
             except Exception as error:
                 message = str(error)
                 low = message.lower()
-                # API does not know JSON mode -> ask again without it (prompts demand JSON anyway)
-                if self.json_mode and "response_format" in low and ("400" in low or "support" in low):
-                    self.json_mode = False
+                # API does not know JSON mode at all -> never ask for it again
+                if use_json and "response_format" in low and ("400" in low or "support" in low):
+                    self.json_mode = use_json = False
                     print("    ! this API has no JSON mode - continuing without it")
                     attempt -= 1
                     continue
-                # The API's strict JSON check rejected the model's answer (Groq: "Failed to
-                # validate JSON"). Our own reader is more forgiving, so turn the check off.
-                if self.json_mode and ("failed to validate json" in low or "json_validate_failed" in low):
-                    self.json_mode = False
+                # The API's strict JSON check rejected this one answer (Groq: "Failed to
+                # validate JSON") -> retry this call with the tool's own, forgiving reader
+                if use_json and ("failed to validate json" in low or "json_validate_failed" in low):
+                    use_json = False
                     print("    ! the API's strict JSON check rejected an answer - "
-                          "switching to the tool's own JSON reader")
+                          "retrying it with the tool's own JSON reader")
                     attempt -= 1
                     continue
+                # Empty or unreadable answer -> try the other mode on the next attempt
+                if isinstance(error, (EmptyAnswer, json.JSONDecodeError)) and self.json_mode:
+                    use_json = not use_json
                 # Daily cap -> next model, without counting it as a failed attempt
                 if ("429" in message and any(h in low for h in DAILY_LIMIT_HINTS)
                         and "minute" not in low):
@@ -142,8 +156,12 @@ class LLM:
                 if attempt >= config.MAX_RETRIES:
                     raise
                 pause = 15 * attempt if "429" in message or "rate" in low else 5
-                print(f"    ! {type(error).__name__}: {message[:110]} - retrying in {pause}s")
+                print(f"    ! {type(error).__name__}: {message[:160]} - retrying in {pause}s")
                 time.sleep(pause)
+
+
+class EmptyAnswer(ValueError):
+    """The API answered, but with no text."""
 
 
 def extract_json(text):
